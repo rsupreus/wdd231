@@ -1,0 +1,90 @@
+@media screen and (min-width: 768px) {
+    .site-header {
+        max-width: var(--max-width);
+        margin: 0 auto;
+    }
+
+    .site-header > img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .site-header span {
+        font-size: 1.4rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        padding: 0 1rem;
+    }
+
+    .navigation {
+        display: flex;
+        max-width: var(--max-width);
+        margin: 0 auto;
+    }
+
+    .navigation li {
+        flex: 1;
+    }
+
+    .navigation a {
+        border-left: 0;
+        border-bottom: 5px solid transparent;
+        text-align: center;
+    }
+
+    .navigation a:hover,
+    .navigation a:focus-visible {
+        border-bottom-color: var(--white);
+    }
+
+    .navigation a.active,
+    .navigation a[aria-current="page"] {
+        border-left: 0;
+        border-bottom-color: var(--white);
+    }
+
+    main {
+        padding-top: 1.5rem;
+    }
+
+    .home-grid {
+        grid-template-columns: minmax(0, 2fr) minmax(250px, 1fr);
+        align-items: stretch;
+    }
+
+    .home-grid section {
+        margin-bottom: 0;
+    }
+
+    .student-photo img {
+        width: min(80%, 275px);
+    }
+
+    .certificate {
+        margin-top: 1rem;
+        border: 0;
+    }
+
+    #course-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .social {
+        padding-top: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .home-grid {
+        grid-template-columns: 2.2fr 1fr;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+}
