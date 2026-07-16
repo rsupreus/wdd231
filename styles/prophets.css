@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    color: #222222;
+    background-color: #eef2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    width: min(100%, 1200px);
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgb(0 0 0 / 15%);
+}
+
+h1 {
+    margin: 0 0 1.5rem;
+    color: #4b4c93;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Responsive card grid */
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem;
+}
+
+/* Individual prophet cards */
+
+#cards section {
+    padding: 1rem;
+    border: 1px solid #b9bad8;
+    border-radius: 3px;
+    background-color: #ececf7;
+    text-align: center;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+}
+
+/* Prophet names */
+
+#cards h2 {
+    margin: 0 0 0.5rem;
+    color: #4b4c93;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    line-height: 1.25;
+}
+
+/* Prophet details */
+
+#cards p {
+    margin: 0.2rem 0;
+    color: #222222;
+    font-size: 0.85rem;
+}
+
+/* Prophet portraits */
+
+#cards img {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin: 0.9rem auto 0;
+    border-radius: 2px;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 30%);
+}
+
+footer {
+    text-align: center;
+}

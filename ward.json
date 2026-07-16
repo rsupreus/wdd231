@@ -1,0 +1,41 @@
+[
+  {
+    "familyName": "Supreus",
+    "moveInDate": "2025-03-15",
+    "familySize": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Edzer Beaucejour",
+        "gender": "Male",
+        "birthDate": "1983-12-21"
+      },
+      {
+        "name": "Jusena Supreus",
+        "gender": "Female",
+        "birthDate": "1989-09-12"
+      },
+      {
+        "name": "RoseDana Supreus",
+        "gender": "Female",
+        "birthDate": "1991-10-07"
+      },
+      {
+        "name": "Eugenie Supreus",
+        "gender": "Female",
+        "birthDate": "1995-05-30"
+      }, 
+      {
+        "name": "Donaldson Beaucejour",
+        "gender": "Male",
+        "birthDate": "1997-04-30"
+      }, 
+      {
+        "name": "Jean Supreus",
+        "gender": "Male",
+        "birthDate": "2000-12-30"
+      }
+    ]
+  }
+]
+  
