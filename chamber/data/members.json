@@ -1,0 +1,112 @@
+{
+  "members": [
+    {
+      "name": "Lin's Fresh Market",
+      "tagline": "Locally Owned Grocery Store",
+      "address": "1930 W Sunset Blvd, St. George, UT 84770",
+      "phone": "(435) 673-4656",
+      "website": "https://linsgrocery.com",
+      "image": "images/linsfreshmarket.png",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Judd's Store",
+      "tagline": "Historic Candy & Ice Cream Shop",
+      "address": "62 W Tabernacle St, St. George, UT 84770",
+      "phone": "(435) 628-2596",
+      "website": "https://juddsstore.com",
+      "image": "images/juddsstore.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "George's Corner Restaurant",
+      "tagline": "A St. George Tradition",
+      "address": "2 W St. George Blvd, St. George, UT 84770",
+      "phone": "(435) 216-7311",
+      "website": "https://georgescorner.com",
+      "image": "images/georgescorner.png",
+      "membershipLevel": 3
+    },
+    {
+      "name": "The Pasta Factory",
+      "tagline": "Family Italian Dining",
+      "address": "20 N Main St, St. George, UT 84770",
+      "phone": "(435) 986-4119",
+      "website": "https://pastafactoryrestaurants.com",
+      "image": "images/pastafactory.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Café Feellove",
+      "tagline": "Coffee • Community • Connection",
+      "address": "2 W St. George Blvd Suite 38, St. George, UT 84770",
+      "phone": "(435) 922-1639",
+      "website": "https://cafefeellove.com",
+      "image": "images/cafefeellove.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Dixie Technical College",
+      "tagline": "Hands-On Career Education",
+      "address": "610 S Tech Ridge Dr, St. George, UT 84770",
+      "phone": "(435) 674-8400",
+      "website": "https://dixietech.edu",
+      "image": "images/dixietech.png",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Intermountain Health St. George Regional Hospital",
+      "tagline": "World-Class Healthcare Close to Home",
+      "address": "1380 E Medical Center Dr, St. George, UT 84790",
+      "phone": "(435) 251-1000",
+      "website": "https://intermountainhealthcare.org",
+      "image": "images/intermountain.png",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Stephen Wade Auto Center",
+      "tagline": "Southern Utah's Auto Mall",
+      "address": "150 S Auto Mall Dr, St. George, UT 84770",
+      "phone": "(435) 222-7605",
+      "website": "https://stephenwade.com",
+      "image": "images/stephenwade.png",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Zion Outfitter",
+      "tagline": "Gateway to Zion Adventures",
+      "address": "7 Zion Park Blvd, Springdale, UT 84767",
+      "phone": "(435) 772-5090",
+      "website": "https://zionoutfitter.com",
+      "image": "images/zionoutfitter.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "America First Credit Union",
+      "tagline": "Helping You Achieve Financial Success",
+      "address": "1564 W Sunset Blvd, St. George, UT 84770",
+      "phone": "(800) 999-3961",
+      "website": "https://www.americafirst.com",
+      "image": "images/americafirst.png",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Tuacahn Center for the Arts",
+      "tagline": "Broadway in the Desert",
+      "address": "1100 Tuacahn Dr, Ivins, UT 84738",
+      "phone": "(435) 652-3200",
+      "website": "https://www.tuacahn.org",
+      "image": "images/tuacahn.png",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Red Mountain Resort",
+      "tagline": "Adventure. Wellness. Relaxation.",
+      "address": "1275 E Red Mountain Cir, Ivins, UT 84738",
+      "phone": "(877) 246-4453",
+      "website": "https://www.redmountainresort.com",
+      "image": "images/redmountain.png",
+      "membershipLevel": 3
+    }
+  ]
+}
