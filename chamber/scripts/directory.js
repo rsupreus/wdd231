@@ -46,6 +46,33 @@ function displayMembers(members) {
     });
 }
 
+function displayLoadingCards(count = 9) {
+    memberContainer.innerHTML = "";
+
+    for (let i = 0; i < count; i++) {
+        const loadingCard = document.createElement("article");
+        loadingCard.classList.add("member-card", "loading-card");
+
+        loadingCard.innerHTML = `
+            <div class="loading-header"></div>
+
+            <div class="loading-body">
+                <div class="loading-logo"></div>
+
+                <div class="loading-details">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        `;
+
+        memberContainer.appendChild(loadingCard);
+    }
+}
+
+
 /**
  * Create one member card.
  *
@@ -304,4 +331,5 @@ themeButton.addEventListener("click", toggleTheme);
 
 loadSavedTheme();
 setGridView();
+displayLoadingCards();
 getMemberData();

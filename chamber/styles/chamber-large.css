@@ -67,67 +67,67 @@
     }
 
    .member-container.list-view {
-        display: grid;
-        gap: 1.25rem;
-    }
+    display: grid;
+    gap: 1.25rem;
+}
 
-    .list-view .member-card {
-        min-height: 220px;
-        padding: 0;
-    }
+.list-view .member-card {
+    min-height: 220px;
+    padding: 0;
+}
 
-    /* Full-width header, matching grid view */
-    .list-view .member-card-header {
-        padding: 1rem;
-        text-align: center;
-        background-color: var(--forest-light);
-        border-bottom: 1px solid var(--border);
-    }
+/* Full-width header, matching grid view */
+.list-view .member-card-header {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--forest-light);
+    border-bottom: 1px solid var(--border);
+}
 
-    /* Logo | details | badge */
-    .list-view .member-card-body {
-        display: grid;
-        grid-template-columns:
-            140px
-            minmax(260px, 1fr)
-            160px;
-        grid-template-areas: "logo details badge";
+/* Logo | details | badge */
+.list-view .member-card-body {
+    display: grid;
+    grid-template-columns:
+        140px
+        minmax(260px, 1fr)
+        160px;
+    grid-template-areas: "logo details badge";
 
-        align-items: center;
-        gap: 2rem;
-        padding: 1.5rem 2rem;
-    }
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+}
 
-    /* Slightly larger list logo */
-    .list-view .logo-container {
-        grid-area: logo;
+/* Slightly larger list logo */
+.list-view .logo-container {
+    grid-area: logo;
 
-        width: 120px;
-        height: 120px;
+    width: 120px;
+    height: 120px;
 
-        justify-self: center;
-        margin: 0;
-    }
+    justify-self: center;
+    margin: 0;
+}
 
-    /* Contact information */
-    .list-view .member-details {
-        grid-area: details;
-        align-self: center;
-    }
+/* Contact information */
+.list-view .member-details {
+    grid-area: details;
+    align-self: center;
+}
 
-    /* Badge centered on the right */
-    .list-view .membership-badge {
-        grid-area: badge;
+/* Badge centered on the right */
+.list-view .membership-badge {
+    grid-area: badge;
 
-        justify-self: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
 
-        width: auto;
-        padding: 0.5rem 1rem;
+    width: auto;
+    padding: 0.5rem 1rem;
 
-        text-align: center;
-        white-space: nowrap;
-    }
+    text-align: center;
+    white-space: nowrap;
+}
 
 
     .footer-container {

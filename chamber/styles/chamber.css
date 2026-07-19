@@ -29,7 +29,7 @@ body {
     margin: 0;
     background-color: var(--cream);
     color: var(--charcoal);
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
 
@@ -60,7 +60,7 @@ h1,
 h2,
 h3,
 .brand-text {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 /* ------------------------------
@@ -250,6 +250,61 @@ main {
     color: var(--white);
 }
 
+.loading-card {
+    min-height: 275px;
+}
+
+.loading-header,
+.loading-logo,
+.loading-details span {
+    background-color: #e6ebe7;
+    border-radius: 6px;
+}
+
+.loading-header {
+    height: 78px;
+    border-radius: 0;
+}
+
+.loading-body {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.loading-logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.loading-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.loading-details span {
+    display: block;
+    width: 100%;
+    height: 14px;
+}
+
+.loading-details span:nth-child(2) {
+    width: 75%;
+}
+
+.loading-details span:nth-child(3) {
+    width: 65%;
+}
+
+.loading-details span:nth-child(4) {
+    width: 45%;
+}
+
+
 /* ------------------------------
    Member cards
 ------------------------------ */
@@ -374,19 +429,6 @@ main {
 .member-details a:hover,
 .member-details a:focus-visible {
     color: var(--forest-dark);
-}
-
-.membership-badge {
-    display: inline-block;
-    margin-top: 0.6rem;
-    padding: 0.25rem 0.65rem;
-    border-radius: 999px;
-    background: #d9e6dc;
-    color: var(--forest-dark);
-    font-weight: 700;
-    border-radius: 999px;
-    padding: .5rem 1rem;
-    font-size: .9rem;
 }
 
 /* ------------------------------
