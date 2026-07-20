@@ -251,7 +251,7 @@ main {
 }
 
 .loading-card {
-    min-height: 275px;
+    min-height: 175px;
 }
 
 .loading-header,
@@ -312,6 +312,7 @@ main {
 .member-container {
     display: grid;
     gap: 1rem;
+    align-content: start;
 }
 
 .member-container.grid-view {
@@ -328,7 +329,6 @@ main {
     border-radius: 10px;
     background-color: var(--white);
     box-shadow: var(--card-shadow);
-    min-height: 235px;
 }
 
 .member-card-header {
@@ -358,21 +358,17 @@ main {
         "badge badge";
     align-items: center;
     gap: 0.75rem;
-    padding: 1rem 1rem 0.5rem;
-    min-height: 235px;
+    padding: 1rem;
 }
 
 .logo-container {
     grid-area: logo;
-
     width: 100px;
     height: 100px;
     padding: 6px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 0 auto;
 }
 
@@ -411,8 +407,6 @@ main {
     font-size: 0.8rem;
     font-weight: 700;
     white-space: nowrap;
-    margin: 0.75rem auto 0;
-    margin-top: 1rem;
 }
 
 .membership-badge.gold {
@@ -455,7 +449,8 @@ main {
 ------------------------------ */
 
 .member-container.list-view {
-    display: block;
+    display: grid;
+    gap: 1rem;
 }
 
 /* ------------------------------
