@@ -7,7 +7,7 @@
     <meta name="author" content="RoseDana Supreus">
     <meta property="og:title" content="St. George Area Chamber of Commerce Directory">
     <meta property="og:description" content="Discover businesses, services, and organizations in St. George, Utah.">
-    <meta property="og:image" content="images/logo.jpg">
+    <meta property="og:image" content="https://rsupreus.github.io/wdd231/chamber/images/logo.webp">
     <meta property="og:url" content="https://rsupreus.github.io/wdd231/chamber/directory.html">
 
     <title> Directory | St. George Area Chamber of Commerce</title>
@@ -30,7 +30,7 @@
         <div class="header-container">
             <a href="index.html" class="brand">
                 <img
-                    src="images/logo.jpg"
+                    src="images/logo.webp"
                     alt="St. George Area Chamber of Commerce logo"
                     width="70"
                     height="70"
@@ -105,8 +105,9 @@
 
         <section
             id="member-container"
-            class="member-container grid-view"
+            class="member-container grid-view loading-members"
             aria-live="polite"
+            aria-busy="true"
         >
             <!-- Business cards are inserted with JavaScript. -->
         </section>
@@ -164,7 +165,7 @@
                 <p>WDD231 Class Project</p>
                 <p>RoseDana Supreus</p>
                 <p>
-                    © 2026 | <span id="current-year"></span>
+                    © <span id="current-year"></span>
                     St. George Area Chamber of Commerce
                 </p>
                 <p id="last-modified"></p>

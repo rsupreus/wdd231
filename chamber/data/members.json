@@ -6,7 +6,7 @@
       "address": "1930 W Sunset Blvd, St. George, UT 84770",
       "phone": "(435) 673-4656",
       "website": "https://linsgrocery.com",
-      "image": "images/linsfreshmarket.png",
+      "image": "images/linsfreshmarket.webp",
       "membershipLevel": 3
     },
     {
@@ -15,7 +15,7 @@
       "address": "62 W Tabernacle St, St. George, UT 84770",
       "phone": "(435) 628-2596",
       "website": "https://juddsstore.com",
-      "image": "images/juddsstore.png",
+      "image": "images/juddsstore.webp",
       "membershipLevel": 2
     },
     {
@@ -24,7 +24,7 @@
       "address": "2 W St. George Blvd, St. George, UT 84770",
       "phone": "(435) 216-7311",
       "website": "https://georgescorner.com",
-      "image": "images/georgescorner.png",
+      "image": "images/georgescorner.webp",
       "membershipLevel": 3
     },
     {
@@ -33,8 +33,8 @@
       "address": "20 N Main St, St. George, UT 84770",
       "phone": "(435) 986-4119",
       "website": "https://pastafactoryrestaurants.com",
-      "image": "images/pastafactory.png",
-      "membershipLevel": 2
+      "image": "images/pastafactory.webp",
+      "membershipLevel": 1
     },
     {
       "name": "Café Feellove",
@@ -42,7 +42,7 @@
       "address": "2 W St. George Blvd Suite 38, St. George, UT 84770",
       "phone": "(435) 922-1639",
       "website": "https://cafefeellove.com",
-      "image": "images/cafefeellove.png",
+      "image": "images/cafefeellove.webp",
       "membershipLevel": 2
     },
     {
@@ -51,16 +51,16 @@
       "address": "610 S Tech Ridge Dr, St. George, UT 84770",
       "phone": "(435) 674-8400",
       "website": "https://dixietech.edu",
-      "image": "images/dixietech.png",
+      "image": "images/dixietech.webp",
       "membershipLevel": 3
     },
     {
-      "name": "Intermountain Health St. George Regional Hospital",
+      "name": "IH St. George Regional Hospital",
       "tagline": "World-Class Healthcare Close to Home",
       "address": "1380 E Medical Center Dr, St. George, UT 84790",
       "phone": "(435) 251-1000",
       "website": "https://intermountainhealthcare.org",
-      "image": "images/intermountain.png",
+      "image": "images/intermountain.webp",
       "membershipLevel": 3
     },
     {
@@ -69,8 +69,8 @@
       "address": "150 S Auto Mall Dr, St. George, UT 84770",
       "phone": "(435) 222-7605",
       "website": "https://stephenwade.com",
-      "image": "images/stephenwade.png",
-      "membershipLevel": 3
+      "image": "images/stephenwade.webp",
+      "membershipLevel": 1
     },
     {
       "name": "Zion Outfitter",
@@ -78,7 +78,7 @@
       "address": "7 Zion Park Blvd, Springdale, UT 84767",
       "phone": "(435) 772-5090",
       "website": "https://zionoutfitter.com",
-      "image": "images/zionoutfitter.png",
+      "image": "images/zionoutfitter.webp",
       "membershipLevel": 2
     },
     {
@@ -87,7 +87,7 @@
       "address": "1564 W Sunset Blvd, St. George, UT 84770",
       "phone": "(800) 999-3961",
       "website": "https://www.americafirst.com",
-      "image": "images/americafirst.png",
+      "image": "images/americafirst.webp",
       "membershipLevel": 3
     },
     {
@@ -96,7 +96,7 @@
       "address": "1100 Tuacahn Dr, Ivins, UT 84738",
       "phone": "(435) 652-3200",
       "website": "https://www.tuacahn.org",
-      "image": "images/tuacahn.png",
+      "image": "images/tuacahn.webp",
       "membershipLevel": 3
     },
     {
@@ -105,8 +105,8 @@
       "address": "1275 E Red Mountain Cir, Ivins, UT 84738",
       "phone": "(877) 246-4453",
       "website": "https://www.redmountainresort.com",
-      "image": "images/redmountain.png",
-      "membershipLevel": 3
+      "image": "images/redmountain.webp",
+      "membershipLevel": 1
     }
   ]
 }

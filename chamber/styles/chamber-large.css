@@ -69,82 +69,87 @@
    .member-container.list-view {
     display: grid;
     gap: 1.25rem;
-}
+    }
 
-.list-view .member-card {
-    min-height: 220px;
-    padding: 0;
-}
+    @media screen and (min-width: 768px) {
+    .member-container.loading-members {
+        min-height: 2300px;
+    }
 
-/* Full-width header, matching grid view */
-.list-view .member-card-header {
-    padding: 1rem;
-    text-align: center;
-    background-color: var(--forest-light);
-    border-bottom: 1px solid var(--border);
-}
+    .list-view .member-card {
+        min-height: 220px;
+        padding: 0;
+    }
 
-/* Logo | details | badge */
-.list-view .member-card-body {
-    display: grid;
-    grid-template-columns:
-        140px
-        minmax(260px, 1fr)
-        160px;
-    grid-template-areas: "logo details badge";
+    /* Full-width header, matching grid view */
+    .list-view .member-card-header {
+        padding: 1rem;
+        text-align: center;
+        background-color: var(--forest-light);
+        border-bottom: 1px solid var(--border);
+    }
 
-    align-items: center;
-    gap: 2rem;
-    padding: 1.5rem 2rem;
-}
+    /* Logo | details | badge */
+    .list-view .member-card-body {
+        display: grid;
+        grid-template-columns:
+            140px
+            minmax(260px, 1fr)
+            160px;
+        grid-template-areas: "logo details badge";
 
-/* Slightly larger list logo */
-.list-view .logo-container {
-    grid-area: logo;
-
-    width: 120px;
-    height: 120px;
-
-    justify-self: center;
-    margin: 0;
-}
-
-/* Contact information */
-.list-view .member-details {
-    grid-area: details;
-    align-self: center;
-}
-
-/* Badge centered on the right */
-.list-view .membership-badge {
-    grid-area: badge;
-
-    justify-self: center;
-    align-self: center;
-
-    width: auto;
-    padding: 0.5rem 1rem;
-
-    text-align: center;
-    white-space: nowrap;
-}
-
-
-    .footer-container {
-        grid-template-columns: 1fr auto 1fr;
         align-items: center;
+        gap: 2rem;
+        padding: 1.5rem 2rem;
     }
 
-       .social-links a {
-        width: 64px;
-        height: 64px;
-        font-size: 1.4rem;
+    /* Slightly larger list logo */
+    .list-view .logo-container {
+        grid-area: logo;
+
+        width: 120px;
+        height: 120px;
+
+        justify-self: center;
+        margin: 0;
     }
 
-    .footer-project {
-        justify-self: end;
+    /* Contact information */
+    .list-view .member-details {
+        grid-area: details;
+        align-self: center;
     }
-}
+
+    /* Badge centered on the right */
+    .list-view .membership-badge {
+        grid-area: badge;
+
+        justify-self: center;
+        align-self: center;
+
+        width: auto;
+        padding: 0.5rem 1rem;
+
+        text-align: center;
+        white-space: nowrap;
+    }
+
+
+        .footer-container {
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+        }
+
+        .social-links a {
+            width: 64px;
+            height: 64px;
+            font-size: 1.4rem;
+        }
+
+        .footer-project {
+            justify-self: end;
+        }
+    }
 
 @media screen and (min-width: 1024px) {
     .navigation a {
@@ -156,6 +161,11 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
+    @media screen and (min-width: 1024px) {
+        .member-container.loading-members {
+            min-height: 1450px;
+        }
+    }
     .grid-view .member-card-header .logo-container {
         display: none;
     }

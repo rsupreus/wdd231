@@ -40,8 +40,8 @@ async function getMemberData() {
 function displayMembers(members) {
     memberContainer.innerHTML = "";
 
-    members.forEach((member) => {
-        const card = createMemberCard(member);
+    members.forEach((member, index) => {
+        const card = createMemberCard(member, index);
         memberContainer.appendChild(card);
     });
 }
@@ -79,12 +79,12 @@ function displayLoadingCards(count = 9) {
  * @param {Object} member - Chamber member information.
  * @returns {HTMLElement} The completed member card.
  */
-function createMemberCard(member) {
+function createMemberCard(member, index) {
     const card = document.createElement("article");
     card.classList.add("member-card");
 
     const header = createMemberHeader(member);
-    const body = createMemberBody(member);
+    const body = createMemberBody(member, index);
 
     card.append(header, body);
 
@@ -118,11 +118,11 @@ function createMemberHeader(member) {
  * @param {Object} member - Chamber member information.
  * @returns {HTMLElement} The card body.
  */
-function createMemberBody(member) {
+function createMemberBody(member, index) {
     const body = document.createElement("div");
     body.classList.add("member-card-body");
 
-    const logoContainer = createLogoContainer(member);
+    const logoContainer = createLogoContainer(member, index);
     const details = createMemberDetails(member);
     const membership = createMembershipBadge(member);
 
@@ -137,16 +137,23 @@ function createMemberBody(member) {
  * @param {Object} member - Chamber member information.
  * @returns {HTMLElement} The logo container.
  */
-function createLogoContainer(member) {
+function createLogoContainer(member, index) {
     const logoContainer = document.createElement("div");
     logoContainer.classList.add("logo-container");
 
     const image = document.createElement("img");
     image.src = member.image;
     image.alt = `${member.name} business logo`;
-    image.width = 200;
-    image.height = 200;
-    image.loading = "lazy";
+    image.width = 160;
+    image.height = 120;
+    image.decoding = "async";
+
+    if (index < 3) {
+        image.loading = "eager";
+        image.fetchPriority = "high";
+    } else {
+        image.loading = "lazy";
+    }
 
     logoContainer.appendChild(image);
 
@@ -198,13 +205,21 @@ function createMemberDetails(member) {
 }
 
 function createMembershipBadge(member) {
-    const membership = document.createElement("span");
-    membership.classList.add("membership-badge");
+    const badge = document.createElement("span");
+    badge.classList.add("membership-badge");
 
-    membership.textContent =
-        `${getMembershipName(member.membershipLevel)} Member`;
+    const level = getMembershipName(member.membershipLevel);
 
-    return membership;
+    badge.classList.add(level.toLowerCase());
+
+    let icon = "🥉";
+
+    if (level === "Silver") icon = "🥈";
+    if (level === "Gold") icon = "🥇";
+
+    badge.innerHTML = `${icon} ${level} Member`;
+
+    return badge;
 }
 
 
