@@ -28,7 +28,7 @@ body {
     margin: 0;
     background-color: var(--cream);
     color: var(--charcoal);
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     line-height: 1.5;
 }
 
@@ -59,7 +59,7 @@ h1,
 h2,
 h3,
 .brand-text {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
 }
 
 /* ------------------------------
@@ -91,10 +91,10 @@ header {
 }
 
 .brand img {
-    width: 54px;
-    height: 54px;
-    border-radius: 8px;
-    object-fit: cover;
+    width: 100px;
+    height: auto;
+    max-height: 70px;
+    object-fit: contain;
 }
 
 .brand-text {
@@ -551,4 +551,399 @@ body.dark-theme .member-details a {
         scroll-behavior: auto !important;
         transition: none !important;
     }
+}
+
+/* Chamber home page: mobile */
+
+.home-main {
+    width: min(100% - 2rem, 1200px);
+    padding-top: 1.25rem;
+}
+
+.hero {
+    position: relative;
+    min-height: 470px;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--forest-dark);
+    box-shadow: var(--card-shadow);
+}
+
+.hero > img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+}
+
+.hero::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: linear-gradient(
+        180deg,
+        rgba(10, 29, 21, 0.18) 0%,
+        rgba(10, 29, 21, 0.86) 100%
+    );
+}
+
+.hero-overlay {
+    position: absolute;
+    z-index: 1;
+    right: 1.25rem;
+    bottom: 1.5rem;
+    left: 1.25rem;
+    max-width: 650px;
+    color: var(--white);
+}
+
+.hero-eyebrow {
+    margin-bottom: 0.4rem;
+    color: #f1c75b;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.09rem;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin-bottom: 0.65rem;
+    font-size: clamp(2.2rem, 11vw, 4.6rem);
+    line-height: 1;
+}
+
+.hero-overlay > p:not(.hero-eyebrow) {
+    max-width: 580px;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid #f1c75b;
+    border-radius: 6px;
+    background-color: #f1c75b;
+    color: var(--forest-dark);
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus-visible {
+    transform: translateY(-2px);
+    background-color: #ffe29b;
+}
+
+.home-information-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.home-panel,
+.spotlight-section {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: var(--card-shadow);
+}
+
+.home-panel {
+    padding: 1.25rem;
+}
+
+.section-heading {
+    margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+    margin-bottom: 0;
+    color: var(--forest-dark);
+    font-size: 1.55rem;
+}
+
+.event-list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.event {
+    display: grid;
+    grid-template-columns: 62px minmax(0, 1fr);
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.event:last-child {
+    border-bottom: 0;
+}
+
+.event time {
+    display: grid;
+    min-height: 62px;
+    place-content: center;
+    border-radius: 8px;
+    background-color: var(--forest-light);
+    color: var(--forest-dark);
+    text-align: center;
+}
+
+.event-month {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+}
+
+.event-day {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event h3 {
+    margin-bottom: 0.2rem;
+    color: var(--forest-dark);
+    font-size: 1rem;
+}
+
+.event p {
+    margin-bottom: 0;
+    color: var(--gray);
+    font-size: 0.88rem;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--forest);
+    font-weight: 700;
+    text-underline-offset: 4px;
+}
+
+.weather-content {
+    min-height: 175px;
+}
+
+.current-weather div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-panel .section-heading {
+    margin-bottom: 0;
+}
+
+.weather-panel .section-heading h2 {
+    text-align: center;
+}
+
+.current-weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    text-align: center;
+}
+
+.current-weather img {
+    width: 100px;
+    height: 100px;
+}
+
+.current-temperature {
+    margin-bottom: auto;
+    color: var(--forest-dark);
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.current-description {
+    margin-bottom: 0;
+    color: var(--gray);
+    text-transform: capitalize;
+}
+
+.forecast-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--forest-dark);
+    font-size: 1rem;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+}
+
+.forecast-day {
+    padding: 0.8rem 0.4rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--cream);
+    text-align: center;
+}
+
+.forecast-day p {
+    margin-bottom: 0.15rem;
+}
+
+.forecast-day-name {
+    color: var(--gray);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.forecast-temperature {
+    color: var(--forest-dark);
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.spotlight-section {
+    margin-top: 1rem;
+    padding: 1.25rem;
+}
+
+.spotlight-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.spotlight-heading .text-link {
+    margin-top: 0.5rem;
+}
+
+.spotlight-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    display: grid;
+    min-height: 290px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.spotlight-card-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--forest-light);
+    text-align: center;
+}
+
+.spotlight-card-header h3 {
+    margin-bottom: 0.2rem;
+    color: var(--forest-dark);
+    font-size: 1.1rem;
+}
+
+.spotlight-card-header p {
+    margin-bottom: 0;
+    color: var(--gray);
+    font-size: 0.84rem;
+}
+
+.spotlight-card-body {
+    display: grid;
+    grid-template-columns: 105px minmax(0, 1fr);
+    grid-template-areas:
+        "logo information"
+        "badge badge";
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+}
+
+.spotlight-logo {
+    grid-area: logo;
+    display: grid;
+    width: 95px;
+    height: 95px;
+    place-items: center;
+}
+
+.spotlight-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.spotlight-information {
+    grid-area: information;
+    min-width: 0;
+}
+
+.spotlight-information p {
+    margin-bottom: 0.4rem;
+    overflow-wrap: anywhere;
+    font-size: 0.86rem;
+}
+
+.spotlight-information strong {
+    color: var(--forest-dark);
+}
+
+.spotlight-information a {
+    color: var(--forest);
+    text-underline-offset: 3px;
+}
+
+.spotlight-badge {
+    grid-area: badge;
+    justify-self: center;
+    width: max-content;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.spotlight-badge.gold {
+    background-color: #fff4cc;
+    color: #8a6d00;
+}
+
+.spotlight-badge.silver {
+    background-color: #f1f3f4;
+    color: #555555;
+}
+
+.status-message {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 1rem;
+    color: var(--gray);
+    text-align: center;
+}
+
+body.dark-theme .section-heading h2,
+body.dark-theme .event h3,
+body.dark-theme .current-temperature,
+body.dark-theme .forecast-title,
+body.dark-theme .forecast-temperature,
+body.dark-theme .spotlight-card-header h3,
+body.dark-theme .spotlight-information strong {
+    color: #e7f1e9;
+}
+
+body.dark-theme .forecast-day {
+    background-color: #192a21;
 }
