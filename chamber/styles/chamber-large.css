@@ -71,7 +71,7 @@
     }
 
     .list-view .member-card {
-        min-height: 220px;
+        min-height: 170px;
         padding: 0;
     }
 
@@ -82,37 +82,60 @@
         text-align: center;
     }
 
-    .list-view .member-card-body {
+    /* List-view card content */
+   .list-view .member-card-body {
         display: grid;
-        grid-template-columns: 140px minmax(260px, 1fr) 160px;
-        grid-template-areas: "logo details badge";
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-areas: "details badge";
+
         align-items: center;
-        gap: 2rem;
-        min-height: auto;
-        padding: 1.5rem 2rem;
+        column-gap: 2rem;
+
+        padding: 1.1rem 2rem 0.6rem;
     }
 
+    /* Hide business logos only in list view */
     .list-view .logo-container {
-        grid-area: logo;
-        width: 120px;
-        height: 120px;
-        margin: 0;
-        justify-self: center;
+        display: none;
     }
 
+    /* Address, phone, and website on one line */
     .list-view .member-details {
         grid-area: details;
-        align-self: center;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        gap: 1.5rem;
+        width: 100%;
+        min-width: 0;
     }
 
+    /* Remove the grid-view paragraph spacing */
+    .list-view .member-details p {
+        margin: 0;
+    }
+
+    /* Keep phone and website from breaking */
+    .list-view .member-phone,
+    .list-view .member-website {
+        white-space: nowrap;
+    }
+
+    /* Badge aligned with the details */
     .list-view .membership-badge {
         grid-area: badge;
         grid-column: auto;
+
         align-self: center;
         justify-self: center;
+
         width: max-content;
         margin: 0;
         padding: 0.5rem 1rem;
+
         text-align: center;
         white-space: nowrap;
     }
@@ -130,6 +153,21 @@
 
     .footer-project {
         justify-self: end;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 950px) {
+    .list-view .member-card-body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "details"
+            "badge";
+        row-gap: 1rem;
+    }
+
+    .list-view .member-details {
+        flex-wrap: wrap;
+        gap: 0.75rem 1.5rem;
     }
 }
 
