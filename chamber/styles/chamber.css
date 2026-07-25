@@ -9,7 +9,7 @@
     --charcoal: #1f2924;
     --gray: #66706a;
     --border: #cbd7cf;
-    --card-shadow: 0 4px 14px rgb(24 57 43 / 14%);
+    --card-shadow: 0 4px 14px rgba(24, 57, 43, 0.14);
     --transition: 0.25s ease;
 }
 
@@ -233,10 +233,7 @@ main {
     color: var(--forest-dark);
     font-weight: 700;
     cursor: pointer;
-    transition:
-        background-color var(--transition),
-        color var(--transition),
-        transform var(--transition);
+    transition: background-color 0.25s ease, transform 0.25s ease;
 }
 
 .view-button:hover,
@@ -502,9 +499,7 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     text-decoration: none;
-    transition:
-        background-color var(--transition),
-        transform var(--transition);
+    transition: background-color 0.25s ease, transform 0.25s ease;
 }
 
 .social-links a:hover,
