@@ -1,0 +1,63 @@
+
+/* Chamber home page: mobile-large */
+
+@media screen and (min-width: 768px) {
+    .home-main {
+        padding-top: 2rem;
+    }
+
+    .hero,
+    .hero > img {
+        min-height: 530px;
+        height: 530px;
+    }
+
+    .hero-overlay {
+        right: auto;
+        bottom: 3rem;
+        left: 3rem;
+    }
+
+    .hero-overlay > p:not(.hero-eyebrow) {
+        font-size: 1.1rem;
+    }
+
+    .home-information-grid {
+        grid-template-columns: minmax(0, 1.2fr) minmax(330px, 0.8fr);
+        gap: 1.25rem;
+        margin-top: 1.25rem;
+    }
+
+    .home-panel {
+        padding: 1.5rem;
+    }
+
+    .spotlight-section {
+        margin-top: 1.25rem;
+        padding: 1.5rem;
+    }
+
+    .spotlight-heading {
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+    }
+
+    .spotlight-heading .text-link {
+        margin-top: 0;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-overlay {
+        left: 4rem;
+    }
+
+    .spotlight-card {
+        min-height: 305px;
+    }
+}
