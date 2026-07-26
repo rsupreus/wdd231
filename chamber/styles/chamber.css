@@ -406,18 +406,19 @@ main {
 }
 
 .membership-badge.gold {
-    background: #FFF4CC;
-    color: #8A6D00;
+    background-color: #f4c542;
+    color: #2b2200;
 }
 
 .membership-badge.silver {
-    background: #F1F3F4;
-    color: #555555;
+    background-color: #d8dde1;
+    color: #222222;
 }
 
 .membership-badge.standard {
-    background: #F4E2D3;
-    color: #8B5A2B;
+    background-color: #b98a5a;
+    color: #2e2115;
+    border: 1px solid #9c734e;
 }
 
 .member-details p:last-child {

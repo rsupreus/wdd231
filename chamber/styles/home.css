@@ -11,7 +11,7 @@
     overflow: hidden;
     border-radius: 12px;
     background-color: var(--forest-dark);
-    box-shadow: var(--card-shadow);
+    box-shadow: 0 4px 14px rgba(24, 57, 43, 0.14);
 }
 
 .hero > img {
@@ -93,7 +93,7 @@
     border: 1px solid var(--border);
     border-radius: 10px;
     background-color: var(--white);
-    box-shadow: var(--card-shadow);
+    box-shadow: 0 4px 14px rgba(24, 57, 43, 0.14);
 }
 
 .home-panel {
@@ -301,7 +301,7 @@
 
 .spotlight-card-header p {
     margin-bottom: 0;
-    color: var(--gray);
+    color: #294737;
     font-size: 0.84rem;
 }
 
@@ -338,6 +338,7 @@
 .spotlight-information p {
     margin-bottom: 0.4rem;
     overflow-wrap: anywhere;
+    color: #333333;
     font-size: 0.86rem;
 }
 
@@ -346,7 +347,8 @@
 }
 
 .spotlight-information a {
-    color: var(--forest);
+    color: #145c3a;
+    font-weight: 600;
     text-underline-offset: 3px;
 }
 
@@ -361,14 +363,20 @@
     white-space: nowrap;
 }
 
+
 .spotlight-badge.gold {
-    background-color: #fff4cc;
-    color: #8a6d00;
+    background-color: #f4c542;
+    color: #2b2200;
 }
 
 .spotlight-badge.silver {
-    background-color: #f1f3f4;
-    color: #555555;
+    background-color: #d8dde1;
+    color: #222222;
+}
+
+.spotlight-badge.standard {
+    background-color: #b98a5a;
+    color: #2e2115;
 }
 
 .status-message {
