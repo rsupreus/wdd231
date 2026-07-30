@@ -572,7 +572,7 @@ body.dark-theme .member-details a {
     border-radius: 12px;
     background-color: var(--forest-dark);
     background:
-        linear-gradient(rgba(24,57,43,.75), rgba(24,57,43,.75)),
+        linear-gradient(rgba(24,57,43,.85), rgba(24,57,43,.85)),
         url("../images/downtown.webp") center/cover;
     color: white;
     text-align: center;
