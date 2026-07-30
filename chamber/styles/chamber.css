@@ -554,3 +554,208 @@ body.dark-theme .member-details a {
     }
 }
 
+
+/* Join Page */
+
+/* Join Page */
+
+.join-main {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
+}
+
+.join-heading {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 4rem 2rem;
+    margin-bottom: 2.5rem;
+    border-radius: 12px;
+    background:
+        linear-gradient(rgba(24,57,43,.75), rgba(24,57,43,.75)),
+        url("../images/downtown.webp") center/cover;
+    color: white;
+    text-align: center;
+}
+
+.join-heading h1 {
+    color: white;
+}
+
+.join-heading .eyebrow {
+    color: var(--sage);
+}
+
+.join-heading p:last-child {
+    color: rgba(255,255,255,.9);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.join-layout {
+    display: grid;
+    gap: 2rem;
+}
+
+.application-section,
+.membership-card {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    background: var(--white);
+    box-shadow: 0 4px 14px rgba(24, 57, 43, 0.14);
+}
+
+.application-section h2,
+.membership-section h2,
+.membership-card h3 {
+    color: var(--forest-dark);
+}
+
+.join-form {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.join-form label {
+    display: grid;
+    gap: 0.4rem;
+    font-weight: 700;
+    color: var(--forest-dark);
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 0.35rem;
+    background: var(--white);
+    color: var(--charcoal);
+    font: inherit;
+    transition: border-color var(--transition),
+                box-shadow var(--transition);
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: none;
+    border-color: var(--forest);
+    box-shadow: 0 0 0 3px rgba(40, 89, 67, 0.2);
+}
+
+.join-form input:required:valid {
+    border-left: 5px solid #3d7559;
+}
+
+.join-form input:required:invalid {
+    border-left: 5px solid #b44b3c;
+}
+
+.timestamp-field {
+    display: none !important;
+}
+
+/* Buttons */
+
+.submit-button,
+.membership-info {
+    cursor: pointer;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--forest);
+    color: var(--white);
+    font-weight: 700;
+    transition: background-color var(--transition),
+                transform var(--transition);
+}
+
+.submit-button:hover,
+.membership-info:hover {
+    background: var(--forest-dark);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    text-align: center;
+    animation: reveal-card 700ms ease-out both;
+    transition: transform var(--transition),
+                box-shadow var(--transition);
+}
+
+.membership-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(24, 57, 43, 0.18);
+}
+
+.membership-card p {
+    color: var(--gray);
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 150ms;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 300ms;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 450ms;
+}
+
+/* Modal */
+
+.membership-modal {
+    width: min(90%, 500px);
+    padding: 2rem;
+    border: none;
+    border-radius: 0.75rem;
+    background: var(--cream);
+    color: var(--charcoal);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.membership-modal h2 {
+    color: var(--forest-dark);
+}
+
+.membership-modal::backdrop {
+    background: rgb(0 0 0 / 65%);
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--forest-dark);
+    font-size: 2rem;
+}
+
+.modal-close:hover {
+    color: var(--forest);
+}
+
+@keyframes reveal-card {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

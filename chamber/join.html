@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="styles/chamber-large.css">
 
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/dates.js" defer></script>
 </head>
 
@@ -68,9 +69,239 @@
         </div>
     </header>
 
-    <main>
-        
+    <main class="join-main">
+       <div class="join-heading">
+            <p class="eyebrow">Grow Your Business</p>
+            <h1>Become a Member</h1>
+            <p>
+                Join the St. George Area Chamber of Commerce and connect with local
+                businesses, networking opportunities, and valuable member resources.
+            </p>
+
+
+        </div>
+
+        <div class="join-layout">
+            <section class="application-section"aria-labelledby="application-title">
+                <h2 id="application-title">Membership Application</h2>
+
+                <form method="get" action="thankyou.html" class="join-form">
+                    <label>
+                        First Name
+                        <input
+                            type="text"
+                            name="first"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input
+                            type="text"
+                            name="last"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input
+                            type="text"
+                            name="org-title"
+                            title="Enter your organizational title using at least seven letters, spaces, or hyphens"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z -]{7,}"
+                        >
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input
+                            type="email"
+                            name="email"
+                            title="Enter your email address"
+                            autocomplete="email"
+                            placeholder="name@example.com"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Mobile Phone Number
+                        <input
+                            type="tel"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Business or Organization Name
+                        <input
+                            type="text"
+                            name="organization"
+                            title="Enter your business or organization name"
+                            autocomplete="organization"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Membership Level
+                        <select
+                            name="membership"
+                            title="Select a membership level"
+                            required
+                        >
+                            <option value="" disabled selected>
+                                Select a membership level
+                            </option>
+                            <option value="np">NP Membership - No Fee</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business or Organization Description
+                        <textarea
+                            name="description"
+                            title="Describe your business or organization"
+                            rows="6"
+                        ></textarea>
+                    </label>
+
+                    <label class="timestamp-field">
+                        Application Timestamp
+                        <input
+                            type="hidden"
+                            name="timestamp"
+                            id="timestamp"
+                        >
+                    </label>
+
+                    <button type="submit" class="submit-button">
+                        Submit Membership Application
+                    </button>
+                </form>
+            </section>
+
+            <section class="membership-section" aria-labelledby="membership-title">
+                <h2 id="membership-title">Membership Levels</h2>
+
+                <div class="membership-cards">
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>For nonprofit organizations. No membership fee.</p>
+                        <button
+                            type="button"
+                            class="membership-info"
+                            data-modal="np-modal"
+                        >
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Build connections and introduce your organization.</p>
+                        <button
+                            type="button"
+                            class="membership-info"
+                            data-modal="bronze-modal"
+                        >
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>Increase your visibility throughout the community.</p>
+                        <button
+                            type="button"
+                            class="membership-info"
+                            data-modal="silver-modal"
+                        >
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>Receive our highest level of promotion and support.</p>
+                        <button
+                            type="button"
+                            class="membership-info"
+                            data-modal="gold-modal"
+                        >
+                            View Benefits
+                        </button>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <dialog id="np-modal" class="membership-modal">
+            <button type="button" class="modal-close" aria-label="Close dialog">
+                &times;
+            </button>
+            <h2>NP Membership Benefits</h2>
+            <ul>
+                <li>Free membership for qualifying nonprofit organizations</li>
+                <li>Chamber directory listing</li>
+                <li>Access to networking events</li>
+                <li>Community training opportunities</li>
+            </ul>
+        </dialog>
+
+        <dialog id="bronze-modal" class="membership-modal">
+            <button type="button" class="modal-close" aria-label="Close dialog">
+                &times;
+            </button>
+            <h2>Bronze Membership Benefits</h2>
+            <ul>
+                <li>All NP-level benefits</li>
+                <li>Business directory listing</li>
+                <li>Member networking events</li>
+                <li>Discounted training and workshops</li>
+            </ul>
+        </dialog>
+
+        <dialog id="silver-modal" class="membership-modal">
+            <button type="button" class="modal-close" aria-label="Close dialog">
+                &times;
+            </button>
+            <h2>Silver Membership Benefits</h2>
+            <ul>
+                <li>All Bronze-level benefits</li>
+                <li>Enhanced directory placement</li>
+                <li>Event admission discounts</li>
+                <li>Homepage spotlight opportunities</li>
+            </ul>
+        </dialog>
+
+        <dialog id="gold-modal" class="membership-modal">
+            <button type="button" class="modal-close" aria-label="Close dialog">
+                &times;
+            </button>
+            <h2>Gold Membership Benefits</h2>
+            <ul>
+                <li>All Silver-level benefits</li>
+                <li>Priority directory placement</li>
+                <li>Homepage spotlight advertising</li>
+                <li>Premium event and sponsorship discounts</li>
+            </ul>
+        </dialog>
     </main>
+
 
     <footer>
         <div class="footer-container">

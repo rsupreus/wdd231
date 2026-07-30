@@ -187,3 +187,16 @@
 }
 
 
+/* Join Page */
+
+.join-layout {
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    align-items: start;
+}
+
+@media screen and (min-width: 800px) {
+    .join-layout {
+        grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+        align-items: start;
+    }
+}
