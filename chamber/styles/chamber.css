@@ -570,6 +570,7 @@ body.dark-theme .member-details a {
     padding: 4rem 2rem;
     margin-bottom: 2.5rem;
     border-radius: 12px;
+    background-color: var(--forest-dark);
     background:
         linear-gradient(rgba(24,57,43,.75), rgba(24,57,43,.75)),
         url("../images/downtown.webp") center/cover;
@@ -582,7 +583,7 @@ body.dark-theme .member-details a {
 }
 
 .join-heading .eyebrow {
-    color: var(--sage);
+    color: var(--forest-dark);
 }
 
 .join-heading p:last-child {
