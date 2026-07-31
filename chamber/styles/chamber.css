@@ -813,7 +813,7 @@ body.dark-theme .member-details a {
     line-height: 1.5;
     box-shadow: var(
         --card-shadow,
-        0 2px 8px rgb(0 0 0 / 12%)
+        0 2px 8px rgb(0 0 0 / 0.12)
     );
 }
 
@@ -885,7 +885,7 @@ body.dark-theme .member-details a {
     background-color: var(--white, #ffffff);
     box-shadow: var(
         --card-shadow,
-        0 2px 10px rgb(0 0 0 / 12%)
+        0 2px 10px rgb(0 0 0 / 0.12)
     );
 }
 
@@ -941,10 +941,11 @@ body.dark-theme .member-details a {
     display: block;
     margin: 0 1rem 1rem;
     padding: 0.75rem 1rem;
-    border: 2px solid var(--forest, #24563b);
+    /* border: 2px solid var(--forest, #24563b); */
     border-radius: 0.4rem;
-    background-color: var(--forest, #24563b);
-    color: var(--white, #ffffff);
+    border: 2px solid currentColor;
+    background-color: var(--forest);
+    color: var(--white);
     font: inherit;
     font-weight: 700;
     text-align: center;
@@ -955,7 +956,6 @@ body.dark-theme .member-details a {
 .discover-card .learn-more:hover,
 .discover-card .learn-more:focus-visible {
     background-color: var(--forest-dark, #173f2b);
-    border-color: var(--forest-dark, #173f2b);
 }
 
 .discover-card .learn-more:focus-visible {

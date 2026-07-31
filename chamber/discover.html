@@ -91,8 +91,49 @@
         <section
             id="discover-grid"
             class="discover-grid"
-            aria-label="St. George attractions"
-        ></section>
+            aria-label="St. George attractions">
+
+                 <!--
+                The first card is in the HTML so its image can be
+                discovered immediately by the browser.
+            -->
+                <article class="discover-card">
+                    <h2>Snow Canyon State Park</h2>
+
+                    <figure>
+                        <img
+                            src="images/snowcanyon.webp"
+                            alt="Red sandstone cliffs at Snow Canyon State Park"
+                            width="300"
+                            height="200"
+                            loading="eager"
+                            fetchpriority="high"
+                            decoding="async"
+                        >
+                    </figure>
+
+                    <address>
+                        1002 Snow Canyon Drive, Ivins, UT 84738
+                    </address>
+
+                    <p>
+                        Explore dramatic red and white sandstone cliffs, lava tubes,
+                        sand dunes, and scenic hiking trails.
+                    </p>
+
+                    <a
+                        class="learn-more"
+                        href="https://stateparks.utah.gov/parks/snow-canyon/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Learn about Snow Canyon State Park
+                    </a>
+                </article> 
+
+        </section>   
+        
+
     </main>
 
     <footer>
