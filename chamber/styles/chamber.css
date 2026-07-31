@@ -8,8 +8,11 @@
     --white: #ffffff;
     --charcoal: #1f2924;
     --gray: #66706a;
+    --accent-gold: #f1c75b;
+    --accent-gold-dark: #7a4c00;
     --border: #cbd7cf;
     --transition: 0.25s ease;
+    --card-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
 }
 
 /* ------------------------------
@@ -188,7 +191,7 @@ main {
 
 .eyebrow {
     margin-bottom: 0.35rem;
-    color: var(--forest-medium);
+    color: var(--accent-gold-dark);
     font-family: "Montserrat", sans-serif;
     font-size: 0.85rem;
     font-weight: 700;
@@ -811,10 +814,7 @@ body.dark-theme .member-details a {
     color: var(--forest-dark, #173f2b);
     font-weight: 700;
     line-height: 1.5;
-    box-shadow: var(
-        --card-shadow,
-        0 2px 8px rgb(0 0 0 / 0.12)
-    );
+    box-shadow: var(--card-shadow);
 }
 
 /* Card grid */
@@ -883,10 +883,7 @@ body.dark-theme .member-details a {
     border: 1px solid var(--border-color, #d7ddd9);
     border-radius: 0.75rem;
     background-color: var(--white, #ffffff);
-    box-shadow: var(
-        --card-shadow,
-        0 2px 10px rgb(0 0 0 / 0.12)
-    );
+    box-shadow: var(--card-shadow);
 }
 
 .discover-card h2 {
