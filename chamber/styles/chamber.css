@@ -12,6 +12,10 @@
     --accent-gold-dark: #704500;
     --border: #cbd7cf;
     --transition: 0.25s ease;
+
+    --dark-surface: #22372b;
+    --dark-text: #f2f6f3;
+    --dark-muted: #d5dfd8;
 }
 
 /* ------------------------------
@@ -520,11 +524,12 @@ footer {
 
 body.dark-theme {
     --cream: #15221b;
-    --white: #22372b;
     --charcoal: #f2f6f3;
     --gray: #d5dfd8;
     --border: #4f6958;
     --forest-light: #304c3b;
+    background-color: #15221b;
+    color: var(--dark-text);
 }
 
 body.dark-theme .directory-heading h1,
@@ -536,6 +541,254 @@ body.dark-theme .member-details strong {
 body.dark-theme .eyebrow,
 body.dark-theme .member-details a {
     color: #b8d4be;
+}
+
+/* Header and navigation */
+
+body.dark-theme .brand,
+body.dark-theme .navigation a,
+body.dark-theme .theme-button,
+body.dark-theme .menu-button {
+    color: var(--white);
+}
+
+/* Join page cards */
+
+body.dark-theme .application-section,
+body.dark-theme .membership-card {
+    background-color: var(--dark-surface);
+    color: var(--dark-text);
+}
+
+/* Join page headings */
+
+body.dark-theme .application-section h2,
+body.dark-theme .membership-section h2,
+body.dark-theme .membership-card h3 {
+    color: var(--dark-text);
+}
+
+/* Form labels */
+
+body.dark-theme .join-form label {
+    color: var(--dark-text);
+}
+
+/* Form controls */
+
+body.dark-theme .join-form input,
+body.dark-theme .join-form select,
+body.dark-theme .join-form textarea {
+    background-color: #1b3025;
+    color: var(--dark-text);
+    border-color: #5f7968;
+}
+
+/* Placeholder text */
+
+body.dark-theme .join-form input::placeholder,
+body.dark-theme .join-form textarea::placeholder {
+    color: #bccac1;
+}
+
+/* Membership card descriptions */
+
+body.dark-theme .membership-card p {
+    color: var(--dark-muted);
+}
+
+/* Membership buttons */
+
+body.dark-theme .submit-button,
+body.dark-theme .membership-info {
+    background-color: var(--forest-medium);
+    color: var(--white);
+}
+
+body.dark-theme .submit-button:hover,
+body.dark-theme .membership-info:hover {
+    background-color: #4d8669;
+    color: var(--white);
+}
+
+/* Discover Page Dark Theme */
+
+body.dark-theme .visitor-message {
+    background-color: #315443;
+    color: var(--dark-text);
+    border-left-color: var(--accent-gold);
+}
+
+body.dark-theme .discover-card address {
+    color: #dfe9e2;
+}
+
+/* ------------------------------
+   Home Page - Dark Theme
+------------------------------ */
+
+/* Events panel */
+
+body.dark-theme .events-panel {
+    background-color: var(--dark-surface);
+    border-color: var(--border);
+}
+
+body.dark-theme .events-panel h2,
+body.dark-theme .events-panel h3 {
+    color: var(--dark-text);
+}
+
+body.dark-theme .events-panel p {
+    color: var(--dark-muted);
+}
+
+
+/* Individual events */
+
+body.dark-theme .event-item {
+    border-color: var(--border);
+}
+
+body.dark-theme .event-item h3,
+body.dark-theme .event-item strong {
+    color: var(--dark-text);
+}
+
+body.dark-theme .event-item p {
+    color: var(--dark-muted);
+}
+
+
+/* Event date boxes */
+
+body.dark-theme .event-date {
+    background-color: #315443;
+    color: var(--dark-text);
+}
+
+
+/* Spotlight section */
+
+body.dark-theme .spotlight-section {
+    background-color: var(--dark-surface);
+    border-color: var(--border);
+}
+
+body.dark-theme .spotlight-section h2,
+body.dark-theme .spotlight-section h3 {
+    color: var(--dark-text);
+}
+
+body.dark-theme .spotlight-section p {
+    color: var(--dark-muted);
+}
+
+
+/* Explore directory link */
+
+body.dark-theme .spotlight-section a {
+    color: #d8eadc;
+}
+
+body.dark-theme .spotlight-section a:hover,
+body.dark-theme .spotlight-section a:focus-visible {
+    color: var(--white);
+}
+
+/* Event dates - dark theme */
+
+body.dark-theme .event time {
+    background-color: #315443;
+    color: var(--dark-text);
+}
+
+body.dark-theme .event-month,
+body.dark-theme .event-day {
+    color: var(--dark-text);
+}
+
+/* ------------------------------
+    Shared dark mode 
+------------------------------ */
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3 {
+    color: var(--dark-text);
+}
+
+body.dark-theme p {
+    color: var(--dark-text);
+}
+
+/* ------------------------------
+   Dark Theme - Shared Cards
+------------------------------ */
+
+body.dark-theme .member-card,
+body.dark-theme .discover-card,
+body.dark-theme .spotlight-card,
+body.dark-theme .event-panel,
+body.dark-theme .weather-panel,
+body.dark-theme .application-section,
+body.dark-theme .membership-card {
+    background-color: var(--dark-surface);
+    border-color: var(--border);
+    color: var(--dark-text);
+}
+
+
+/* Headings */
+
+body.dark-theme .member-card h2,
+body.dark-theme .member-card h3,
+body.dark-theme .discover-card h2,
+body.dark-theme .spotlight-card h2,
+body.dark-theme .spotlight-card h3,
+body.dark-theme .event-panel h2,
+body.dark-theme .event-panel h3,
+body.dark-theme .weather-panel h2,
+body.dark-theme .weather-panel h3 {
+    color: var(--dark-text);
+}
+
+
+/* Normal paragraphs */
+
+body.dark-theme .member-card p,
+body.dark-theme .discover-card p,
+body.dark-theme .spotlight-card p,
+body.dark-theme .event-panel p,
+body.dark-theme .weather-panel p {
+    color: var(--dark-muted);
+}
+
+
+/* Strong / important text */
+
+body.dark-theme .member-card strong,
+body.dark-theme .spotlight-card strong,
+body.dark-theme .event-panel strong,
+body.dark-theme .weather-panel strong {
+    color: var(--dark-text);
+}
+
+
+/* Links */
+
+body.dark-theme .member-card a,
+body.dark-theme .spotlight-card a,
+body.dark-theme .event-panel a,
+body.dark-theme .weather-panel a {
+    color: #d8eadc;
+}
+
+body.dark-theme .member-card a:hover,
+body.dark-theme .spotlight-card a:hover,
+body.dark-theme .event-panel a:hover,
+body.dark-theme .weather-panel a:hover {
+    color: var(--white);
 }
 
 /* ------------------------------
@@ -748,6 +1001,19 @@ body.dark-theme .member-details a {
 
 .modal-close:hover {
     color: var(--forest);
+}
+
+body.dark-theme .membership-modal {
+    background-color: var(--dark-surface);
+    color: var(--dark-text);
+}
+
+body.dark-theme .membership-modal h2 {
+    color: var(--dark-text);
+}
+
+body.dark-theme .modal-close {
+    color: var(--white);
 }
 
 @keyframes reveal-card {
