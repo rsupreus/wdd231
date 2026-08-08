@@ -1045,6 +1045,18 @@ footer {
     font-size: 0.9rem;
 }
 
+.video-demo-link {
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+}
+
+.video-demo-link:hover,
+.video-demo-link:focus-visible {
+    color: var(--peach);
+}
+
 
 
 
