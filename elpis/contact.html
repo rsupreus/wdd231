@@ -24,6 +24,7 @@
 
     <script type="module" src="scripts/main.mjs"></script>
     <script type="module" src="scripts/contact.mjs"></script>
+    <script type="module" src="scripts/scripture.mjs"></script>
     <script src="scripts/dates.js" defer></script>
 </head>
 
@@ -91,6 +92,20 @@
                     Tell us what you're looking for and we'll help you identify
                     the right next step for your body, mind, and spirit.
                 </p>
+            </div>
+        </section>
+
+        <section class="scripture-feature">
+            <div class="section-width">
+                <p class="eyebrow">Scripture for the Journey</p>
+
+                <div id="scripture-card" class="scripture-card">
+                    <p id="scripture-text">
+                        Loading today's encouragement...
+                    </p>
+
+                    <p id="scripture-reference"></p>
+                </div>
             </div>
         </section>
 
@@ -226,17 +241,60 @@
 
     <footer>
         <div class="section-width footer-content">
-            <div>
+
+            <div class="footer-info">
                 <p class="footer-brand">Elpis Wellness</p>
                 <p>Faith • Strength • Wellness</p>
             </div>
 
-           <div class="footer-dates">
-            <p>
-                &copy; <span id="current-year"></span> Elpis Wellness
-            </p>
-            <p id="last-modified"></p>
-           </div>
+            <section class="social-links" aria-label="Social media links">
+                <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="YouTube"
+                >
+                    ▶
+                </a>
+
+                <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook"
+                >
+                    f
+                </a>
+
+                <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="LinkedIn"
+                >
+                    in
+                </a>
+            </section>
+
+            <div class="footer-dates">
+                <p>
+                    &copy; <span id="current-year"></span> Elpis Wellness
+                </p>
+
+                <p id="last-modified"></p>
+
+                <p>
+                    <a
+                        class="video-demo-link"
+                        href="YOUR-VIDEO-URL-HERE"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Project Demonstration Video
+                    </a>
+                </p>
+            </div>
+
         </div>
     </footer>
 

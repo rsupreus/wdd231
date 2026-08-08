@@ -24,10 +24,11 @@
 
     <script type="module" src="scripts/main.mjs"></script>
     <script type="module" src="scripts/services.mjs"></script>
+    <script type="module" src="scripts/scripture.mjs"></script>
     <script src="scripts/dates.js" defer></script>
 </head>
 
-<body>
+<body class="services-page">
     <header class="site-header">
         <a class="brand" href="index.html" aria-label="Elpis Wellness home">
             <img
@@ -141,6 +142,20 @@
         </section>
     </main>
 
+    <section class="scripture-feature">
+        <div class="section-width">
+            <p class="eyebrow">Scripture for the Journey</p>
+
+            <div id="scripture-card" class="scripture-card">
+                <p id="scripture-text">
+                    Loading today's encouragement...
+                </p>
+
+                <p id="scripture-reference"></p>
+            </div>
+        </div>
+    </section>
+
     <dialog id="service-dialog" class="service-dialog">
         <button
             id="close-service-dialog"
@@ -169,36 +184,79 @@
         <div id="saved-services"></div>
 
         <div class="plan-dialog-actions">
-        <button
-            id="clear-plan-button"
-            class="button button-secondary"
-            type="button"
-        >
-            Clear Plan
-        </button>
+            <button
+                id="clear-plan-button"
+                class="button button-secondary"
+                type="button"
+            >
+                Clear Plan
+            </button>
 
-        <a
-            class="button button-primary"
-            href="contact.html"
-        >
-            Book Consultation
-        </a>
-    </div>
+            <a
+                class="button button-primary"
+                href="contact.html"
+            >
+                Book Consultation
+            </a>
+        </div>
     </dialog>
 
     <footer>
         <div class="section-width footer-content">
-            <div>
+
+            <div class="footer-info">
                 <p class="footer-brand">Elpis Wellness</p>
                 <p>Faith • Strength • Wellness</p>
             </div>
 
+            <section class="social-links" aria-label="Social media links">
+                <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="YouTube"
+                >
+                    ▶
+                </a>
+
+                <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook"
+                >
+                    f
+                </a>
+
+                <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="LinkedIn"
+                >
+                    in
+                </a>
+            </section>
+
             <div class="footer-dates">
-            <p>
-                &copy; <span id="current-year"></span> Elpis Wellness
-            </p>
-            <p id="last-modified"></p>
-        </div>
+                <p>
+                    &copy; <span id="current-year"></span> Elpis Wellness
+                </p>
+
+                <p id="last-modified"></p>
+
+                <p>
+                    <a
+                        class="video-demo-link"
+                        href="YOUR-VIDEO-URL-HERE"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Project Demonstration Video
+                    </a>
+                </p>
+            </div>
+
         </div>
     </footer>
 </body>

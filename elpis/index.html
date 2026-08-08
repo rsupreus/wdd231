@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/elpis-large.css">
 
     <script type="module" src="scripts/main.mjs"></script>
+    <script type="module" src="scripts/scripture.mjs"></script>
     <script src="scripts/dates.js" defer></script>
 </head>
 
@@ -81,33 +82,7 @@
     </header>
 
     <main>
-        <!-- <section class="hero section-width">
-            <div class="hero-image">
-                <img
-                    src="images/hero.webp"
-                    alt="Woman enjoying a peaceful outdoor wellness activity"
-                    width="800"
-                    height="600"
-                >
-            </div>
-
-            <div class="hero-content">
-                <p class="eyebrow">Body • Mind • Spirit</p>
-
-                <h1>Strength for the Whole Person</h1>
-
-                <p class="hero-description">
-                    Christ-centered wellness guidance designed to support
-                    physical, mental, and spiritual well-being.
-                </p>
-
-                <a class="button button-primary" href="services.html">
-                    Explore Services
-                </a>
-            </div>
-        </section> -->
-
-        <section class="hero">
+         <section class="hero">
             <div class="hero-content">
                 <p class="eyebrow">Body • Mind • Spirit</p>
 
@@ -121,6 +96,20 @@
                 <a class="button button-primary" href="services.html">
                     Explore Services
                 </a>
+            </div>
+        </section>
+
+        <section class="scripture-feature">
+            <div class="section-width">
+                <p class="eyebrow">Scripture for the Journey</p>
+
+                <div id="scripture-card" class="scripture-card">
+                    <p id="scripture-text">
+                        Loading today's encouragement...
+                    </p>
+
+                    <p id="scripture-reference"></p>
+                </div>
             </div>
         </section>
 
@@ -144,7 +133,28 @@
                             <li>Body Scanning</li>
                         </ul>
 
-                        <a href="services.html?category=Fitness">
+                        <div class="preview-video">
+                            <a
+                                href="https://www.youtube.com/watch?v=nwBsdOXIGyI"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Watch Fitness video"
+                            >
+                                <img
+                                    src="images/fitness-video.jpg"
+                                    alt="Fitness wellness video thumbnail"
+                                    loading="lazy"
+                                    width="400"
+                                    height="225"
+                                >
+
+                                <span class="preview-play" aria-hidden="true">
+                                    ▶
+                                </span>
+                            </a>
+                        </div>
+
+                        <a class="preview-link" href="services.html?category=Fitness">
                             Explore Fitness
                         </a>
                     </article>
@@ -158,7 +168,28 @@
                             <li>Protein &amp; Supplement Support</li>
                         </ul>
 
-                        <a href="services.html?category=Nutrition">
+                        <div class="preview-video">
+                            <a
+                                href="https://www.youtube.com/watch?v=3o2jkh7FVpw"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Watch Nutrition video"
+                            >
+                                <img
+                                    src="images/nutrition-video.jpg"
+                                    alt="Nutrition wellness video thumbnail"
+                                    loading="lazy"
+                                    width="400"
+                                    height="225"
+                                >
+
+                                <span class="preview-play" aria-hidden="true">
+                                    ▶
+                                </span>
+                            </a>
+                        </div>
+
+                        <a class="preview-link" href="services.html?category=Nutrition">
                             Explore Nutrition
                         </a>
                     </article>
@@ -172,7 +203,28 @@
                             <li>Cognitive Behavioral Support</li>
                         </ul>
 
-                        <a href="services.html?category=Holistic">
+                        <div class="preview-video">
+                            <a
+                                href="https://www.youtube.com/watch?v=IInPxe9bJeg"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Watch Holistic Health video"
+                            >
+                                <img
+                                    src="images/holistic-video.jpg"
+                                    alt="Holistic health wellness video thumbnail"
+                                    loading="lazy"
+                                    width="400"
+                                    height="225"
+                                >
+
+                                <span class="preview-play" aria-hidden="true">
+                                    ▶
+                                </span>
+                            </a>
+                        </div>
+
+                        <a class="preview-link" href="services.html?category=Holistic">
                             Explore Holistic Health
                         </a>
                     </article>
@@ -227,19 +279,62 @@
     </main>
 
     <footer>
-    <div class="section-width footer-content">
-        <div>
-            <p class="footer-brand">Elpis Wellness</p>
-            <p>Faith • Strength • Wellness</p>
-        </div>
+        <div class="section-width footer-content">
 
-        <div class="footer-dates">
-            <p>
-                &copy; <span id="current-year"></span> Elpis Wellness
-            </p>
-            <p id="last-modified"></p>
+            <div class="footer-info">
+                <p class="footer-brand">Elpis Wellness</p>
+                <p>Faith • Strength • Wellness</p>
+            </div>
+
+            <section class="social-links" aria-label="Social media links">
+                <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="YouTube"
+                >
+                    ▶
+                </a>
+
+                <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook"
+                >
+                    f
+                </a>
+
+                <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="LinkedIn"
+                >
+                    in
+                </a>
+            </section>
+
+            <div class="footer-dates">
+                <p>
+                    &copy; <span id="current-year"></span> Elpis Wellness
+                </p>
+
+                <p id="last-modified"></p>
+
+                <p>
+                    <a
+                        class="video-demo-link"
+                        href="YOUR-VIDEO-URL-HERE"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Project Demonstration Video
+                    </a>
+                </p>
+            </div>
+
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
