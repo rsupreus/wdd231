@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Elpis Wellness to schedule a Christ-centered fitness, nutrition, or holistic wellness consultation.">
+    <meta name="author" content="RoseDana Supreus">
+    <meta property="og:title" content="Contact Elpis Wellness">
+    <meta property="og:description" content="Begin your wellness journey by requesting a consultation with Elpis Wellness.">
+    <meta property="og:image" content="images/hero.webp">
+    <meta property="og:url" content="https://rsupreus.github.io/wdd231/elpis/contact.html">
+
+    <title>Contact | Elpis Wellness</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/elpis.css">
+    <link rel="stylesheet" href="styles/elpis-large.css">
+
+    <script type="module" src="scripts/main.mjs"></script>
+    <script type="module" src="scripts/contact.mjs"></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+
+<body class="contact-page">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Elpis Wellness home">
+            <img
+                class="brand-logo"
+                src="images/logo.webp"
+                alt=""
+                width="50"
+                height="50"
+            >
+
+            <span class="brand-text">
+                <span class="brand-name">Elpis</span>
+                <span class="brand-name">Wellness</span>
+            </span>
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="header-actions">
+            <nav
+                id="primary-navigation"
+                class="primary-navigation"
+                aria-label="Primary navigation"
+            >
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a class="active" href="contact.html">Contact</a>
+                <a class="nav-cta" href="contact.html">Book Now</a>
+            </nav>
+
+            <button
+                id="theme-button"
+                class="theme-button"
+                type="button"
+                aria-label="Switch to dark mode"
+                title="Toggle dark mode"
+            >
+                ☾
+            </button>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="page-hero">
+            <div class="section-width">
+                <p class="eyebrow">Begin Your Journey</p>
+                <h1>Let's Talk About Your Wellness Goals</h1>
+                <p>
+                    Tell us what you're looking for and we'll help you identify
+                    the right next step for your body, mind, and spirit.
+                </p>
+            </div>
+        </section>
+
+        <div class="contact-layout">
+            <section class="contact-intro">
+                <p class="eyebrow">Christ-Centered Support</p>
+                <h2>Book a Consultation</h2>
+
+                <p>
+                    Whether you're seeking fitness guidance, nutrition support,
+                    or a holistic approach to wellness, we're here to help you
+                    move forward with purpose.
+                </p>
+
+                <blockquote>
+                    “Commit your work to the Lord, and your plans will be established.”
+                    <cite>Proverbs 16:3</cite>
+                </blockquote>
+            </section>
+
+            <form class="consultation-form" method="get" action="form-action.html">
+
+                <fieldset class="contact-information">
+                    <legend>Contact Information</legend>
+
+                    <label>
+                        First Name
+                        <input
+                            type="text"
+                            name="first"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input
+                            type="text"
+                            name="last"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input
+                            type="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Phone Number
+                        <input
+                            type="tel"
+                            name="phone"
+                            autocomplete="tel"
+                        >
+                    </label>
+                </fieldset>
+
+                <fieldset class="wellness-plan-fieldset">
+                    <legend>Your Wellness Plan</legend>
+
+                    <div id="selected-services-summary">
+                        <p>No services have been added to your wellness plan yet.</p>
+                    </div>
+
+                    <input
+                        type="hidden"
+                        id="selected-services"
+                        name="selected-services"
+                    >
+                </fieldset>
+
+                <fieldset class="well-interests">
+                    <legend>Wellness Interests</legend>
+
+                    <label>
+                        Primary Area of Interest
+
+                        <select name="service" required>
+                            <option value="">Choose a wellness area</option>
+                            <option value="Fitness">Fitness</option>
+                            <option value="Nutrition">Nutrition</option>
+                            <option value="Holistic Health">
+                                Holistic Health
+                            </option>
+                            <option value="Not Sure">
+                                I'm Not Sure Yet
+                            </option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Preferred Contact Method
+
+                        <select name="contact-method" required>
+                            <option value="">Select one</option>
+                            <option value="Email">Email</option>
+                            <option value="Phone">Phone</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Tell Us About Your Goals
+
+                        <textarea
+                            name="goals"
+                            rows="6"
+                            placeholder="What would you like support with?"
+                            required
+                        ></textarea>
+                    </label>
+                </fieldset>
+
+                <input
+                    type="hidden"
+                    id="timestamp"
+                    name="timestamp"
+                >
+
+                <button class="button button-primary" type="submit">
+                    Request Consultation
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="section-width footer-content">
+            <div>
+                <p class="footer-brand">Elpis Wellness</p>
+                <p>Faith • Strength • Wellness</p>
+            </div>
+
+           <div class="footer-dates">
+            <p>
+                &copy; <span id="current-year"></span> Elpis Wellness
+            </p>
+            <p id="last-modified"></p>
+           </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector("#timestamp").value =
+            new Date().toISOString();
+    </script>
+</body>
+</html>

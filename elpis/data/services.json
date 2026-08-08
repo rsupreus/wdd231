@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "name": "Personal Training",
+        "category": "Fitness",
+        "price": "Starting at $75",
+        "shortDescription": "One-on-one coaching designed around your strength, mobility, and wellness goals.",
+        "description": "Personal training sessions combine individualized exercise programming, encouragement, and intentional goal setting to help you build lasting strength and confidence.",
+        "duration": "60 minutes",
+        "format": "Individual",
+        "bestFor": "Strength, mobility, accountability, and personalized fitness support"
+    },
+    {
+        "id": 2,
+        "name": "Strength Foundations",
+        "category": "Fitness",
+        "price": "Starting at $65",
+        "shortDescription": "Build confidence with safe and effective foundational strength training.",
+        "description": "Strength Foundations introduces proper movement patterns, resistance exercises, and progressive training techniques for clients beginning or rebuilding a fitness routine.",
+        "duration": "45 minutes",
+        "format": "Individual",
+        "bestFor": "Beginners and clients returning to exercise"
+    },
+    {
+        "id": 3,
+        "name": "Guided Outdoor Fitness",
+        "category": "Fitness",
+        "price": "Starting at $85",
+        "shortDescription": "Improve endurance and reconnect with creation through guided outdoor movement.",
+        "description": "Guided outdoor fitness combines walking, hiking, bodyweight exercises, and mindful movement in an outdoor setting.",
+        "duration": "60-90 minutes",
+        "format": "Individual or Small Group",
+        "bestFor": "Cardiovascular health, endurance, and outdoor activity"
+    },
+    {
+        "id": 4,
+        "name": "Body Composition Scan",
+        "category": "Fitness",
+        "price": "$40",
+        "shortDescription": "Track meaningful wellness measurements beyond the number on a scale.",
+        "description": "Body composition scanning provides useful measurements that can help clients understand progress and establish realistic wellness goals.",
+        "duration": "30 minutes",
+        "format": "Individual",
+        "bestFor": "Progress tracking and goal setting"
+    },
+    {
+        "id": 5,
+        "name": "Mobility & Recovery",
+        "category": "Fitness",
+        "price": "Starting at $60",
+        "shortDescription": "Improve flexibility, movement quality, and recovery through guided mobility work.",
+        "description": "Mobility and recovery sessions focus on gentle movement, stretching, and recovery techniques that support healthy movement patterns.",
+        "duration": "45 minutes",
+        "format": "Individual",
+        "bestFor": "Flexibility, mobility, and active recovery"
+    },
+    {
+        "id": 6,
+        "name": "Nutrition Coaching",
+        "category": "Nutrition",
+        "price": "Starting at $80",
+        "shortDescription": "Develop realistic nutrition habits that support your personal wellness goals.",
+        "description": "Nutrition coaching provides practical guidance for building sustainable eating habits while supporting energy, wellness, and long-term consistency.",
+        "duration": "60 minutes",
+        "format": "Individual",
+        "bestFor": "Healthy eating habits and personalized nutrition guidance"
+    },
+    {
+        "id": 7,
+        "name": "Personal Wellness Planning",
+        "category": "Nutrition",
+        "price": "Starting at $95",
+        "shortDescription": "Create an approachable nutrition and wellness plan designed around your lifestyle.",
+        "description": "Personal wellness planning brings together goals, routines, food choices, and daily habits to create a practical wellness strategy.",
+        "duration": "60 minutes",
+        "format": "Individual",
+        "bestFor": "Clients seeking structure and sustainable routines"
+    },
+    {
+        "id": 8,
+        "name": "Meal Planning Support",
+        "category": "Nutrition",
+        "price": "Starting at $65",
+        "shortDescription": "Simplify healthy eating with practical meal-planning strategies.",
+        "description": "Meal planning support helps clients develop organized, realistic approaches to grocery planning, preparation, and balanced meal choices.",
+        "duration": "45 minutes",
+        "format": "Individual",
+        "bestFor": "Busy individuals and families"
+    },
+    {
+        "id": 9,
+        "name": "Protein & Supplement Guidance",
+        "category": "Nutrition",
+        "price": "$45",
+        "shortDescription": "Learn how protein and wellness supplements may fit into a balanced nutrition routine.",
+        "description": "This educational consultation reviews general protein needs and supplement considerations while emphasizing food-first wellness habits.",
+        "duration": "30 minutes",
+        "format": "Consultation",
+        "bestFor": "Clients interested in nutrition products and general supplementation education"
+    },
+    {
+        "id": 10,
+        "name": "Healthy Habit Coaching",
+        "category": "Nutrition",
+        "price": "Starting at $65",
+        "shortDescription": "Turn wellness goals into consistent daily habits that are easier to maintain.",
+        "description": "Healthy Habit Coaching focuses on realistic behavior changes involving meals, hydration, movement, rest, and personal accountability.",
+        "duration": "45 minutes",
+        "format": "Individual",
+        "bestFor": "Long-term lifestyle improvement"
+    },
+    {
+        "id": 11,
+        "name": "Foot Reflexology",
+        "category": "Holistic Health",
+        "price": "Starting at $70",
+        "shortDescription": "Experience a calming wellness practice focused on relaxation and restorative care.",
+        "description": "Foot reflexology sessions use gentle pressure techniques designed to promote relaxation and provide a peaceful wellness experience.",
+        "duration": "45 minutes",
+        "format": "Individual",
+        "bestFor": "Relaxation and restorative wellness"
+    },
+    {
+        "id": 12,
+        "name": "Guided Breathwork",
+        "category": "Holistic Health",
+        "price": "Starting at $50",
+        "shortDescription": "Practice intentional breathing techniques that encourage calm and focused awareness.",
+        "description": "Guided breathwork teaches simple breathing exercises that can support relaxation, reflection, and intentional moments of stillness.",
+        "duration": "30 minutes",
+        "format": "Individual or Small Group",
+        "bestFor": "Relaxation, mindfulness, and stress management"
+    },
+    {
+        "id": 13,
+        "name": "Faith-Centered Meditation",
+        "category": "Holistic Health",
+        "price": "Starting at $50",
+        "shortDescription": "Create space for peaceful reflection through guided Christian meditation.",
+        "description": "Faith-centered meditation combines quiet reflection, guided breathing, scripture-centered thoughts, and intentional moments of gratitude.",
+        "duration": "30 minutes",
+        "format": "Individual or Small Group",
+        "bestFor": "Spiritual reflection and intentional rest"
+    },
+    {
+        "id": 14,
+        "name": "Mindful Wellness Coaching",
+        "category": "Holistic Health",
+        "price": "Starting at $65",
+        "shortDescription": "Develop routines that encourage balance, reflection, and purposeful living.",
+        "description": "Mindful Wellness Coaching helps clients examine routines and wellness habits while developing intentional practices that support balance and personal growth.",
+        "duration": "45 minutes",
+        "format": "Individual",
+        "bestFor": "Life balance, mindfulness, and personal wellness routines"
+    },
+    {
+        "id": 15,
+        "name": "Whole-Person Wellness Session",
+        "category": "Holistic Health",
+        "price": "Starting at $90",
+        "shortDescription": "Explore physical, emotional, and spiritual wellness goals in one integrated session.",
+        "description": "The Whole-Person Wellness Session provides an opportunity to discuss multiple areas of wellness and identify practical next steps that support body, mind, and spirit.",
+        "duration": "60 minutes",
+        "format": "Individual",
+        "bestFor": "Clients who want an integrated approach to wellness"
+    }
+]

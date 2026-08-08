@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Elpis Wellness fitness, nutrition, and holistic health services designed to support physical, mental, and spiritual wellness.">
+    <meta name="author" content="RoseDana Supreus">
+    <meta property="og:title" content="Wellness Services | Elpis Wellness">
+    <meta property="og:description" content="Discover Christ-centered fitness, nutrition, and holistic wellness services from Elpis Wellness.">
+    <meta property="og:image" content="images/hero.webp">
+    <meta property="og:url" content="https://rsupreus.github.io/wdd231/elpis/services.html">
+
+    <title>Wellness Services | Elpis Wellness</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/elpis.css">
+    <link rel="stylesheet" href="styles/elpis-large.css">
+
+    <script type="module" src="scripts/main.mjs"></script>
+    <script type="module" src="scripts/services.mjs"></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Elpis Wellness home">
+            <img
+                class="brand-logo"
+                src="images/logo.webp"
+                alt=""
+                width="50"
+                height="50"
+            >
+
+            <span class="brand-text">
+                <span class="brand-name">Elpis</span>
+                <span class="brand-name">Wellness</span>
+            </span>
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="header-actions">
+            <nav
+                id="primary-navigation"
+                class="primary-navigation"
+                aria-label="Primary navigation"
+            >
+                <a href="index.html">Home</a>
+                <a class="active" href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a class="nav-cta" href="contact.html">Book Now</a>
+            </nav>
+
+            <button
+                id="theme-button"
+                class="theme-button"
+                type="button"
+                aria-label="Switch to dark mode"
+                title="Toggle dark mode"
+            >
+                ☾
+            </button>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="page-hero">
+            <div class="section-width">
+                <p class="eyebrow">Body • Mind • Spirit</p>
+                <h1>Wellness Designed Around You</h1>
+                <p>
+                    Explore personalized fitness, nutrition, and holistic
+                    wellness services designed to strengthen the whole person.
+                </p>
+            </div>
+        </section>
+
+        <section class="service-browser section-width">
+            <div class="service-controls">
+                <div>
+                    <p class="eyebrow">Explore Services</p>
+                    <h2>Find the Right Support</h2>
+                </div>
+
+                <div
+                    class="filter-buttons"
+                    role="group"
+                    aria-label="Filter wellness services"
+                >
+                    <button class="filter-button active" data-category="All">
+                        All
+                    </button>
+
+                    <button class="filter-button" data-category="Fitness">
+                        Fitness
+                    </button>
+
+                    <button class="filter-button" data-category="Nutrition">
+                        Nutrition
+                    </button>
+
+                    <button class="filter-button" data-category="Holistic Health">
+                        Holistic Health
+                    </button>
+                </div>
+            </div>
+
+            <div class="plan-summary">
+                <p>
+                    My Wellness Plan:
+                    <strong><span id="plan-count">0</span> services</strong>
+                </p>
+
+                <button id="view-plan-button" class="text-button" type="button">
+                    View My Plan
+                </button>
+            </div>
+
+            <p id="service-message" class="status-message" aria-live="polite"></p>
+
+            <div id="service-grid" class="service-grid"></div>
+        </section>
+    </main>
+
+    <dialog id="service-dialog" class="service-dialog">
+        <button
+            id="close-service-dialog"
+            class="dialog-close"
+            type="button"
+            aria-label="Close service details"
+        >
+            ×
+        </button>
+
+        <div id="service-dialog-content"></div>
+    </dialog>
+
+    <dialog id="plan-dialog" class="service-dialog">
+        <button
+            id="close-plan-dialog"
+            class="dialog-close"
+            type="button"
+            aria-label="Close wellness plan"
+        >
+            ×
+        </button>
+
+        <h2>My Wellness Plan</h2>
+
+        <div id="saved-services"></div>
+
+        <div class="plan-dialog-actions">
+        <button
+            id="clear-plan-button"
+            class="button button-secondary"
+            type="button"
+        >
+            Clear Plan
+        </button>
+
+        <a
+            class="button button-primary"
+            href="contact.html"
+        >
+            Book Consultation
+        </a>
+    </div>
+    </dialog>
+
+    <footer>
+        <div class="section-width footer-content">
+            <div>
+                <p class="footer-brand">Elpis Wellness</p>
+                <p>Faith • Strength • Wellness</p>
+            </div>
+
+            <div class="footer-dates">
+            <p>
+                &copy; <span id="current-year"></span> Elpis Wellness
+            </p>
+            <p id="last-modified"></p>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elpis Wellness provides Christ-centered fitness, nutrition, and holistic wellness services that strengthen the body, mind, and spirit.">
+    <meta name="author" content="RoseDana Supreus">
+    <meta property="og:title" content="Elpis Wellness | Strength for the Whole Person">
+    <meta property="og:description" content="Explore Christ-centered fitness, nutrition, and holistic wellness services designed to support the body, mind, and spirit.">
+    <meta property="og:image" content="images/hero.webp">
+    <meta property="og:url" content="https://rsupreus.github.io/wdd231/elpis/index.html">
+
+    <title>Elpis Wellness | Home</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/elpis.css">
+    <link rel="stylesheet" href="styles/elpis-large.css">
+
+    <script type="module" src="scripts/main.mjs"></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Elpis Wellness home">
+            <img
+                class="brand-logo"
+                src="images/logo.webp"
+                alt=""
+                width="50"
+                height="50"
+            >
+
+            <span class="brand-text">
+                <span class="brand-name">Elpis</span>
+                <span class="brand-name">Wellness</span>
+            </span>
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="header-actions">
+            <nav
+                id="primary-navigation"
+                class="primary-navigation"
+                aria-label="Primary navigation"
+            >
+                <a class="active" href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a class="nav-cta" href="contact.html">Book Now</a>
+            </nav>
+
+            <button
+                id="theme-button"
+                class="theme-button"
+                type="button"
+                aria-label="Switch to dark mode"
+                title="Toggle dark mode"
+            >
+                ☾
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- <section class="hero section-width">
+            <div class="hero-image">
+                <img
+                    src="images/hero.webp"
+                    alt="Woman enjoying a peaceful outdoor wellness activity"
+                    width="800"
+                    height="600"
+                >
+            </div>
+
+            <div class="hero-content">
+                <p class="eyebrow">Body • Mind • Spirit</p>
+
+                <h1>Strength for the Whole Person</h1>
+
+                <p class="hero-description">
+                    Christ-centered wellness guidance designed to support
+                    physical, mental, and spiritual well-being.
+                </p>
+
+                <a class="button button-primary" href="services.html">
+                    Explore Services
+                </a>
+            </div>
+        </section> -->
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Body • Mind • Spirit</p>
+
+                <h1>Strength for the Whole Person</h1>
+
+                <p class="hero-description">
+                    Christ-centered wellness guidance designed to support physical,
+                    mental, and spiritual well-being.
+                </p>
+
+                <a class="button button-primary" href="services.html">
+                    Explore Services
+                </a>
+            </div>
+        </section>
+
+        <section class="services-preview">
+            <div class="section-width">
+                <div class="section-heading">
+                    <p class="eyebrow">Whole-Person Care</p>
+                    <h2>Our Wellness Services</h2>
+                    <p>
+                        Personalized support for every part of your wellness journey.
+                    </p>
+                </div>
+
+                <div class="service-preview-grid">
+                    <article class="preview-card">
+                        <h3>Fitness</h3>
+
+                        <ul>
+                            <li>Personal Training</li>
+                            <li>Guided Outdoor Activities</li>
+                            <li>Body Scanning</li>
+                        </ul>
+
+                        <a href="services.html?category=Fitness">
+                            Explore Fitness
+                        </a>
+                    </article>
+
+                    <article class="preview-card">
+                        <h3>Nutrition</h3>
+
+                        <ul>
+                            <li>Nutrition Coaching</li>
+                            <li>Wellness Planning</li>
+                            <li>Protein &amp; Supplement Support</li>
+                        </ul>
+
+                        <a href="services.html?category=Nutrition">
+                            Explore Nutrition
+                        </a>
+                    </article>
+
+                    <article class="preview-card">
+                        <h3>Holistic Health</h3>
+
+                        <ul>
+                            <li>Foot Reflexology</li>
+                            <li>Breathwork &amp; Meditation</li>
+                            <li>Cognitive Behavioral Support</li>
+                        </ul>
+
+                        <a href="services.html?category=Holistic">
+                            Explore Holistic Health
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="faith-section section-width">
+            <div class="faith-image">
+                <img
+                    src="images/faith-wellness.webp"
+                    alt="Peaceful outdoor setting representing faith and wellness"
+                    width="700"
+                    height="550"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="faith-content">
+                <p class="eyebrow">Faith-Centered Care</p>
+
+                <h2>Healing With Purpose</h2>
+
+                <p>
+                    Build lasting habits with compassionate guidance grounded
+                    in faith, perseverance, and God's direction.
+                </p>
+
+                <blockquote>
+                    “I can do all things through Christ who strengthens me.”
+                    <cite>Philippians 4:13</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="journey-cta">
+            <div class="section-width journey-inner">
+                <div>
+                    <p class="eyebrow">Take the Next Step</p>
+                    <h2>Begin Your Wellness Journey</h2>
+                    <p>
+                        Schedule a personal training session, nutrition consultation,
+                        or holistic wellness appointment.
+                    </p>
+                </div>
+
+                <a class="button button-primary" href="contact.html">
+                    Book a Consultation
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="section-width footer-content">
+        <div>
+            <p class="footer-brand">Elpis Wellness</p>
+            <p>Faith • Strength • Wellness</p>
+        </div>
+
+        <div class="footer-dates">
+            <p>
+                &copy; <span id="current-year"></span> Elpis Wellness
+            </p>
+            <p id="last-modified"></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

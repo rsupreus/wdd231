@@ -220,10 +220,10 @@
     .discover-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-areas:
-            "card1 card2"
-            "card3 card4"
-            "card5 card6"
-            "card7 card8";
+            "snow temple"
+            "pioneer redcliffs"
+            "thunder tuacahn"
+            "dinosaur sandhollow";
         gap: 1.5rem;
     }
 }
@@ -234,8 +234,8 @@
     .discover-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-template-areas:
-            "card1 card2 card3 card4"
-            "card5 card6 card7 card8";
+            "snow temple pioneer redcliffs"
+            "thunder tuacahn dinosaur sandhollow";
     }
 
     .discover-card img {

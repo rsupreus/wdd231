@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confirmation of your Elpis Wellness consultation request.">
+    <meta name="author" content="RoseDana Supreus">
+
+    <title>Consultation Request | Elpis Wellness</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/elpis.css">
+    <link rel="stylesheet" href="styles/elpis-large.css">
+
+    <script type="module" src="scripts/main.mjs"></script>
+    <script type="module" src="scripts/form.mjs"></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Elpis Wellness home">
+            <img
+                class="brand-logo"
+                src="images/logo.webp"
+                alt=""
+                width="50"
+                height="50"
+            >
+
+            <span class="brand-text">
+                <span class="brand-name">Elpis</span>
+                <span class="brand-name">Wellness</span>
+            </span>
+        </a>
+
+    </header>
+
+    <button
+        id="theme-button"
+        class="theme-button"
+        type="button"
+        aria-label="Switch to dark mode"
+        title="Toggle dark mode"
+    >
+        ☾
+    </button>
+
+    <div id="confetti-container" aria-hidden="true"></div>
+
+    <main>
+        <section class="confirmation section-width">
+            <p class="eyebrow">Thank You</p>
+
+            <h1>Your Wellness Journey Starts Here</h1>
+
+            <p>
+                We've received your consultation request. Here's the
+                information you provided:
+            </p>
+
+            <div id="submitted-information" class="submission-card"></div>
+
+            <a class="button button-primary" href="index.html">
+                Return Home
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="section-width footer-content">
+            <div>
+                <p class="footer-brand">Elpis Wellness</p>
+                <p>Faith • Strength • Wellness</p>
+            </div>
+
+           <div class="footer-dates">
+            <p>
+                &copy; <span id="current-year"></span> Elpis Wellness
+            </p>
+            <p id="last-modified"></p>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>

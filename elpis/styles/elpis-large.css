@@ -1,0 +1,197 @@
+@media screen and (min-width: 768px) {
+
+    .site-header {
+        display: flex;
+        align-items: center;
+        padding-inline: 5%;
+    }
+
+     .brand {
+        flex-shrink: 0;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-left: auto;
+    }
+
+    .primary-navigation {
+        position: static;
+        display: flex;
+        align-items: center;
+        gap: 1.75rem;
+
+        width: auto;
+        margin: 0;
+        padding: 0;
+
+        border: 0;
+        background: transparent;
+    }
+
+    .primary-navigation a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        margin-left: auto;
+    }
+
+    .primary-navigation .nav-cta {
+        margin: 0;
+        padding: 0.7rem 1rem;
+    }
+
+    .primary-navigation .theme-button {
+        margin-left: 0.25rem;
+        flex-shrink: 0;
+    }
+
+    .theme-button {
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+    /* ---------- HOME ---------- */
+
+    .hero {
+        grid-template-columns: 0.9fr 1.1fr;
+        min-height: 700px;
+        background-position: center 75%;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .hero-image {
+        grid-column: 2;
+    }
+
+    .hero-content {
+        grid-row: 1;
+        grid-column: 1;
+        margin-right: 4%;
+    }
+    .service-preview-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .preview-card {
+        min-height: 330px;
+    }
+
+    .faith-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .journey-inner {
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+
+
+    /* ---------- SERVICES ---------- */
+
+    .service-controls {
+        grid-template-columns: 1fr auto;
+        align-items: end;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+ /* ---------- CONTACT ---------- */
+
+    .contact-layout {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 2rem 3rem;
+        align-items: start;
+        width: min(90%, var(--max-width));
+        margin-inline: auto;
+        padding-block: 3rem 4rem;
+    }
+
+    .consultation-form {
+        display: contents;
+    }
+
+    /* LEFT COLUMN */
+
+    .contact-intro {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 2rem;
+        margin-top: 1.25rem;
+        border-radius: 0.75rem;
+        background:
+            linear-gradient(
+                135deg,
+                rgba(158, 205, 212, 0.35),
+                rgba(243, 244, 239, 0.5)
+            );
+    }
+
+    .contact-intro h2 {
+        margin-bottom: 1.5rem;
+    }
+
+
+    .wellness-plan-fieldset {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+
+    /* RIGHT COLUMN */
+
+    .contact-information {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .well-interests {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .contact-information,
+    .well-interests {
+        box-shadow: 0 5px 18px rgba(34, 103, 118, 0.08);
+    }
+
+
+    /* SUBMIT */
+
+    .consultation-form > .button {
+        grid-column: 2;
+        grid-row: 3;
+
+        width: 100%;
+        padding-block: 1rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    .footer-content {
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 1050px) {
+
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

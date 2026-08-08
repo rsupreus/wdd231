@@ -1088,49 +1088,49 @@ body.dark-theme .modal-close {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-        "card1"
-        "card2"
-        "card3"
-        "card4"
-        "card5"
-        "card6"
-        "card7"
-        "card8";
+        "snow"
+        "temple"
+        "pioneer"
+        "redcliffs"
+        "thunder"
+        "tuacahn"
+        "dinosaur"
+        "sandhollow";
     gap: 1.25rem;
 }
 
 /* Card area assignments */
 
 .discover-card:nth-child(1) {
-    grid-area: card1;
+    grid-area: snow;
 }
 
 .discover-card:nth-child(2) {
-    grid-area: card2;
+    grid-area: temple;
 }
 
 .discover-card:nth-child(3) {
-    grid-area: card3;
+    grid-area: pioneer;
 }
 
 .discover-card:nth-child(4) {
-    grid-area: card4;
+    grid-area: redcliffs;
 }
 
 .discover-card:nth-child(5) {
-    grid-area: card5;
+    grid-area: thunder;
 }
 
 .discover-card:nth-child(6) {
-    grid-area: card6;
+    grid-area: tuacahn;
 }
 
 .discover-card:nth-child(7) {
-    grid-area: card7;
+    grid-area: dinosaur;
 }
 
 .discover-card:nth-child(8) {
-    grid-area: card8;
+    grid-area: sandhollow;
 }
 
 /* Individual attraction card */
