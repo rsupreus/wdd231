@@ -11,6 +11,7 @@
     --heading-font: "Montserrat", sans-serif;
     --body-font: "Open Sans", sans-serif;
     --quote-font: "Cormorant Garamond", serif;
+    --card-text: #174f5b;
     --max-width: 1200px;
 }
 
@@ -231,7 +232,7 @@ h3 {
 
 .primary-navigation a:hover,
 .primary-navigation a.active {
-    color: var(--bright-teal);
+    color: var(--deep-teal);
 }
 
 .primary-navigation .nav-cta {
@@ -279,34 +280,36 @@ body.dark-mode .primary-navigation {
 /* ---------- HOME HERO ---------- */
 
 .hero {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     min-height: 580px;
     padding: 3rem 5%;
-    background:
-        linear-gradient(
-            rgba(243, 244, 239, 0.15),
-            rgba(243, 244, 239, 0.15)
-        ),
-        url("../images/hero.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 75%;
+    filter: brightness(0.95);
 }
 
 .hero-content {
-    align-items: flex-end;
+    position: relative;
+    z-index: 1;
     width: min(100%, 560px);
     padding: 2rem;
     background: rgba(243, 244, 239, 0.82);
-    border: 1px solid rgba(255, 255, 255, 0.45);
     border-radius: 0.8rem;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
-
 .hero-content h1 {
     margin-bottom: 1rem;
 }
@@ -352,10 +355,17 @@ body.dark-mode .primary-navigation {
 
 .preview-card:nth-child(2) {
     background: var(--soft-blue);
+    color: var(--card-text);
 }
 
 .preview-card:nth-child(3) {
     background: var(--peach);
+    color: var(--card-text);
+}
+
+.preview-card:nth-child(2) li,
+.preview-card:nth-child(3) li {
+    color: #333333;
 }
 
 .preview-card:hover {
@@ -366,6 +376,7 @@ body.dark-mode .primary-navigation {
 .preview-card ul {
     padding-left: 1.2rem;
 }
+
 
 
 
@@ -555,7 +566,7 @@ blockquote cite {
 }
 
 .contact-page .scripture-card #scripture-text {
-    color: var(--deep-teal);
+    color: #174f5b;
 }
 
 .contact-page .scripture-card #scripture-reference {
@@ -1248,7 +1259,7 @@ body.dark-mode .preview-card .preview-link {
 body.dark-mode .preview-card .preview-link:hover {
     background: var(--peach);
     color: var(--deep-teal);
-    border-color: var(--peach);
+    border-color: var(--deep-teal);
 }
 
 body.dark-mode .preview-card .preview-link:focus-visible {
@@ -1358,7 +1369,7 @@ body.dark-mode .filter-button {
 body.dark-mode .filter-button:hover,
 body.dark-mode .filter-button.active {
     background: var(--bright-teal);
-    border-color: var(--bright-teal);
+    border-color: var(--soft-blue);
     color: #ffffff;
 }
 

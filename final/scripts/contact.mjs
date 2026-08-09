@@ -48,6 +48,18 @@ async function loadSelectedServices() {
     }
 }
 
+const consultationForm = document.querySelector(".consultation-form");
+
+if (consultationForm) {
+    consultationForm.addEventListener("submit", () => {
+        const timestamp = document.querySelector("#timestamp");
+
+        if (timestamp) {
+            timestamp.value = new Date().toISOString();
+        }
+    });
+}
+
 
 function displaySelectedServices(selectedServices) {
     if (selectedServices.length === 0) {
