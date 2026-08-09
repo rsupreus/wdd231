@@ -150,7 +150,6 @@
 
 
     /* ---------- FOOTER ---------- */
-
     .footer-info {
         grid-column: 1;
     }
@@ -163,6 +162,16 @@
     .footer-dates {
         grid-column: 3;
     }
+}
+
+/* ---------- ATTRIBUTIONS ---------- */
+
+.attributions-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.image-attributions {
+    grid-column: 1 / -1;
 }
 
 

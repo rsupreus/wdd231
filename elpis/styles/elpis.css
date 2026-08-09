@@ -287,6 +287,7 @@ body.dark-mode .primary-navigation {
     min-height: 580px;
     padding: 3rem 5%;
     overflow: hidden;
+     border-top: 4px solid var(--deep-teal);
 }
 
 .hero-background {
@@ -296,7 +297,7 @@ body.dark-mode .primary-navigation {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 75%;
+    object-position: center 20%;
     filter: brightness(0.95);
 }
 
@@ -573,13 +574,15 @@ blockquote cite {
     color: #26383c;
 }
 
+
+
 /* ---------- SERVICES PAGE ---------- */
 
 .services-page {
     background-image:
         linear-gradient(
-            rgba(248, 248, 244, 0.78),
-            rgba(248, 248, 244, 0.78)
+            rgba(248, 248, 244, 0.62),
+            rgba(248, 248, 244, 0.62)
         ),
         url("../images/services.webp");
 
@@ -587,6 +590,35 @@ blockquote cite {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.services-page .page-hero {
+    padding-block: 4rem;
+    background: transparent;
+    border-top: 4px solid var(--peach);
+}
+
+.services-page .page-hero .section-width {
+    padding: 2.5rem;
+    background: rgba(247, 249, 247, 0.88);
+    border: 1px solid rgba(34, 103, 118, 0.18);
+    border-left: 5px solid var(--peach);
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(34, 103, 118, 0.12);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.services-page .page-hero h1 {
+    color: #174f5b;
+}
+
+.services-page .page-hero .eyebrow {
+    color: #8f4f35;
+}
+
+.services-page .page-hero p {
+    color: #333333;
 }
 
 .service-browser {
@@ -659,11 +691,13 @@ blockquote cite {
 .service-card {
     display: grid;
     overflow: hidden;
+    background: rgba(255, 255, 255, 0.92);
     border: 1px solid var(--border);
     border-top: 4px solid var(--peach);
+    box-shadow: 0 6px 18px rgba(34, 103, 118, 0.10);
     border-radius: 0.75rem;
-    background: var(--white);
 }
+    
 
 .service-card-content {
     display: grid;
@@ -699,6 +733,12 @@ blockquote cite {
 
 .service-actions button {
     flex: 1 1 120px;
+}
+
+.plan-summary {
+    background: rgba(255, 255, 255, 0.90);
+    border-left: 4px solid var(--peach);
+    box-shadow: 0 4px 12px rgba(34, 103, 118, 0.08);
 }
 
 
@@ -776,17 +816,22 @@ blockquote cite {
     background: transparent;
 }
 
-.contact-page .page-hero .section-width {
-    padding: 2rem;
-    background: rgba(190, 224, 227, 0.88);
-    border: 1px solid rgba(34, 103, 118, 0.30);
+.contact-page .page-hero {
+    padding-block: 4rem;
+    background: rgba(190, 224, 227, 0.55);
     border-top: 4px solid var(--deep-teal);
-    border-radius: 0.75rem;
-    box-shadow: 0 8px 24px rgba(34, 103, 118, 0.14);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+    border-bottom: 1px solid rgba(34, 103, 118, 0.25);
 }
 
+.contact-page .page-hero .section-width {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
 .selected-services-intro {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -1067,8 +1112,6 @@ footer {
 .video-demo-link:focus-visible {
     color: var(--peach);
 }
-
-
 
 
 
@@ -1390,17 +1433,18 @@ body.dark-mode.contact-page main {
 }
 
 body.dark-mode.contact-page .page-hero {
-    background: transparent;
+    background: rgba(18, 42, 47, 0.78);
+    border-top-color: var(--peach);
+    border-bottom-color: rgba(158, 205, 212, 0.25);
 }
 
 body.dark-mode.contact-page .page-hero .section-width {
-    background: rgba(18, 42, 47, 0.72);
-    border: 1px solid rgba(158, 205, 212, 0.45);
-    border-radius: 0.75rem;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
 }
 
 body.dark-mode.contact-page .page-hero h1 {
@@ -1530,4 +1574,115 @@ body.dark-mode .footer-brand {
 body.dark-mode footer p,
 body.dark-mode #last-modified {
     color: var(--off-white);
+}
+
+/* ---------- ATTRIBUTIONS ---------- */
+
+.attributions-page {
+    background: var(--off-white);
+}
+
+.attributions-main {
+    width: min(90%, var(--max-width));
+    margin-inline: auto;
+    padding-block: 3rem 4rem;
+}
+
+.attributions-hero {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.attributions-hero .eyebrow {
+    margin-bottom: 0.5rem;
+    color: var(--deep-teal);
+}
+
+.attributions-hero h1 {
+    margin: 0 0 0.75rem;
+    color: var(--deep-teal);
+}
+
+.attributions-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #3f3f3f;
+}
+
+.attributions-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.attribution-card {
+    padding: 1.75rem;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--peach);
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 18px rgba(34, 103, 118, 0.08);
+}
+
+.attribution-card h2 {
+    margin-top: 0;
+    color: var(--deep-teal);
+}
+
+.attribution-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0 0;
+    text-align: center;
+}
+
+.attribution-card li {
+    margin-bottom: 0.4rem;
+}
+
+.attribution-card p,
+.attribution-card li {
+    color: #3f3f3f;
+    line-height: 1.7;
+}
+
+.attribution-card a {
+    color: var(--deep-teal);
+    font-weight: 600;
+    text-underline-offset: 0.2rem;
+}
+
+.attribution-card a:hover,
+.attribution-card a:focus-visible {
+    color: #8f4f35;
+}
+
+.image-attributions {
+    grid-column: 1 / -1;
+}
+
+.attributions-actions {
+    margin-top: 2rem;
+}
+
+.attributions-actions a {
+    display: inline-block;
+    padding: 0.8rem 1.25rem;
+
+    background: var(--deep-teal);
+    color: #ffffff;
+
+    border-radius: 0.35rem;
+
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.attributions-actions a:hover,
+.attributions-actions a:focus-visible {
+    background: #174f5b;
 }
