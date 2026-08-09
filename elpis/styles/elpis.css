@@ -661,7 +661,8 @@ blockquote cite {
     margin-bottom: 1.5rem;
     padding: 1rem;
     border-left: 4px solid var(--peach);
-    background: var(--white);
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 0 4px 12px rgba(34, 103, 118, 0.08);
 }
 
 .plan-summary p {
@@ -735,13 +736,6 @@ blockquote cite {
     flex: 1 1 120px;
 }
 
-.plan-summary {
-    background: rgba(255, 255, 255, 0.90);
-    border-left: 4px solid var(--peach);
-    box-shadow: 0 4px 12px rgba(34, 103, 118, 0.08);
-}
-
-
 /* ---------- DIALOG ---------- */
 
 .service-dialog {
@@ -810,10 +804,6 @@ blockquote cite {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-.contact-page .page-hero {
-    background: transparent;
 }
 
 .contact-page .page-hero {
@@ -1661,10 +1651,6 @@ body.dark-mode #last-modified {
     color: #8f4f35;
 }
 
-.image-attributions {
-    grid-column: 1 / -1;
-}
-
 .attributions-actions {
     margin-top: 2rem;
 }
@@ -1672,12 +1658,9 @@ body.dark-mode #last-modified {
 .attributions-actions a {
     display: inline-block;
     padding: 0.8rem 1.25rem;
-
     background: var(--deep-teal);
     color: #ffffff;
-
     border-radius: 0.35rem;
-
     font-weight: 700;
     text-decoration: none;
 }
