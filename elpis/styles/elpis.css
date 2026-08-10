@@ -532,12 +532,12 @@ blockquote cite {
     padding: 2.5rem 1.5rem 3rem;
 }
 
-.scripture-feature .eyebrow {
+.scripture-card .eyebrow {
+    margin: 0 0 1.25rem;
     color: var(--deep-teal);
     font-weight: 700;
-    letter-spacing: 0.15em;
     text-align: center;
-    margin: 0 0 1rem;
+    letter-spacing: 0.16em;
 }
 
 /* Default Scripture card: Home + Services */
