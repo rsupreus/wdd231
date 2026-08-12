@@ -354,30 +354,30 @@ body.dark-mode .primary-navigation {
 }
 
 
-/* Nutrition */
+/* ---------- HOME PREVIEW CARD CONTRAST ---------- */
+
 .preview-card:nth-child(2) {
     background: var(--soft-blue);
-    color: #333333;
+    color: #252525;
 }
 
-/* Holistic Health */
 .preview-card:nth-child(3) {
     background: var(--peach);
-    color: #333333;
+    color: #252525;
 }
 
-/* Headings on both colored cards */
+/* Darker headings for sufficient contrast */
 .preview-card:nth-child(2) h3,
 .preview-card:nth-child(3) h3 {
-    color: #174f5b;
+    color: #123f49;
 }
 
-/* Body/list text */
+/* Darker body/list text */
 .preview-card:nth-child(2) p,
 .preview-card:nth-child(2) li,
 .preview-card:nth-child(3) p,
 .preview-card:nth-child(3) li {
-    color: #333333;
+    color: #252525;
 }
 
 .preview-card:hover {
