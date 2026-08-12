@@ -354,17 +354,28 @@ body.dark-mode .primary-navigation {
 }
 
 
+/* Nutrition */
 .preview-card:nth-child(2) {
     background: var(--soft-blue);
-    color: var(--card-text);
+    color: #333333;
 }
 
+/* Holistic Health */
 .preview-card:nth-child(3) {
     background: var(--peach);
-    color: var(--card-text);
+    color: #333333;
 }
 
+/* Headings on both colored cards */
+.preview-card:nth-child(2) h3,
+.preview-card:nth-child(3) h3 {
+    color: #174f5b;
+}
+
+/* Body/list text */
+.preview-card:nth-child(2) p,
 .preview-card:nth-child(2) li,
+.preview-card:nth-child(3) p,
 .preview-card:nth-child(3) li {
     color: #333333;
 }
@@ -871,9 +882,12 @@ blockquote cite {
 }
 
 .contact-page .wellness-plan-fieldset {
-    background: rgba(217, 238, 238, 0.88);
-    border: 1px solid rgba(34, 103, 118, 0.15);
-    border-left: 4px solid var(--peach);
+    margin: 0;
+    padding: 1.75rem 2rem;
+    background: rgba(217, 238, 238, 0.90);
+    border: 1px solid rgba(34, 103, 118, 0.18);
+    border-left: 5px solid var(--peach);
+    border-radius: 0.75rem;
     box-shadow: 0 8px 24px rgba(34, 103, 118, 0.10);
 }
 
@@ -913,18 +927,6 @@ blockquote cite {
 
 .consultation-form textarea {
     resize: vertical;
-}
-
-.contact-page .wellness-plan-fieldset {
-    padding: 1.75rem 2rem;
-
-    background: rgba(217, 238, 238, 0.90);
-
-    border: 1px solid rgba(34, 103, 118, 0.18);
-    border-left: 5px solid var(--peach);
-    border-radius: 0.75rem;
-
-    box-shadow: 0 8px 24px rgba(34, 103, 118, 0.10);
 }
 
 /* ---------- CONTACT LAYOUT: MOBILE ---------- */
