@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/elpis.css">
     <link rel="stylesheet" href="styles/elpis-large.css">
 
@@ -85,31 +86,6 @@
     <main>
         <section class="page-hero">
             <div class="section-width">
-                <p class="eyebrow">Begin Your Journey</p>
-                <h1>Let's Talk About Your Wellness Goals</h1>
-                <p>
-                    Tell us what you're looking for and we'll help you identify
-                    the right next step for your body, mind, and spirit.
-                </p>
-            </div>
-        </section>
-
-        <section class="scripture-feature">
-            <div class="section-width">
-                <div class="scripture-card">
-                    <p class="eyebrow">Scripture for the Journey</p>
-
-                    <p id="scripture-text">
-                        Loading today's encouragement...
-                    </p>
-
-                    <p id="scripture-reference"></p>
-                </div>
-            </div>
-        </section>
-
-        <div class="contact-layout">
-            <section class="contact-intro">
                 <p class="eyebrow">Christ-Centered Support</p>
                 <h2>Book a Consultation</h2>
 
@@ -123,9 +99,31 @@
                     “Commit your work to the Lord, and your plans will be established.”
                     <cite>Proverbs 16:3</cite>
                 </blockquote>
-            </section>
+            </div>
+        </section>
 
-            <form class="consultation-form" method="get" action="form-action.html">
+        <div class="contact-layout">
+            <form
+                class="consultation-form"
+                method="get"
+                action="form-action.html"
+            >
+                <fieldset class="wellness-plan-fieldset">
+                    <legend>Your Wellness Plan</legend>
+
+                    <div id="selected-services-summary">
+                        <p>
+                            No services have been added to your wellness plan yet.
+                        </p>
+                    </div>
+
+                    <input
+                        type="hidden"
+                        id="selected-services"
+                        name="selected-services"
+                    >
+                </fieldset>
+
 
                 <fieldset class="contact-information">
                     <legend>Contact Information</legend>
@@ -170,19 +168,6 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="wellness-plan-fieldset">
-                    <legend>Your Wellness Plan</legend>
-
-                    <div id="selected-services-summary">
-                        <p>No services have been added to your wellness plan yet.</p>
-                    </div>
-
-                    <input
-                        type="hidden"
-                        id="selected-services"
-                        name="selected-services"
-                    >
-                </fieldset>
 
                 <fieldset class="well-interests">
                     <legend>Wellness Interests</legend>
@@ -225,17 +210,37 @@
                     </label>
                 </fieldset>
 
+
                 <input
                     type="hidden"
                     id="timestamp"
                     name="timestamp"
                 >
 
-                <button class="button button-primary" type="submit">
+                <button
+                    class="button button-primary"
+                    type="submit"
+                >
                     Request Consultation
                 </button>
+
             </form>
         </div>
+
+        <section class="scripture-feature">
+            <div class="section-width">
+                <div class="scripture-card">
+                    <p class="eyebrow">Scripture for the Journey</p>
+
+                    <p id="scripture-text">
+                        Loading today's encouragement...
+                    </p>
+
+                    <p id="scripture-reference"></p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>

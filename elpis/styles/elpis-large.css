@@ -98,56 +98,49 @@
 
 
 
- /* ---------- CONTACT ---------- */
+/* ---------- CONTACT ---------- */
 
     .contact-layout {
-        display: grid;
-        grid-template-columns: 0.8fr 1.2fr;
-        gap: 2rem 3rem;
-        align-items: start;
         width: min(90%, var(--max-width));
         margin-inline: auto;
         padding-block: 3rem 4rem;
     }
 
-    .consultation-form {
-        display: contents;
+    .contact-layout .consultation-form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem 3rem;
+        align-items: stretch;
+        width: 100%;
     }
 
-    /* LEFT COLUMN */
-
-    .contact-intro {
-        grid-column: 1;
+    .contact-layout .wellness-plan-fieldset {
+        grid-column: 1 / -1;
         grid-row: 1;
-        padding: 2rem;
-        margin-top: 1.25rem;
-        border-radius: 0.75rem;
+        margin: 0;
     }
 
-    .contact-intro h2 {
-        margin-bottom: 1.5rem;
-    }
-
-
-    .wellness-plan-fieldset {
+    .contact-layout .contact-information {
         grid-column: 1;
         grid-row: 2;
+        margin: 0;
     }
 
-
-    /* RIGHT COLUMN */
-
-    .contact-information {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .well-interests {
+    .contact-layout .well-interests {
         grid-column: 2;
         grid-row: 2;
+        margin: 0;
     }
 
-
+    .contact-layout .consultation-form > button[type="submit"] {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        display: block;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        justify-self: stretch;
+    }
 
     /* ---------- FOOTER ---------- */
     .footer-info {

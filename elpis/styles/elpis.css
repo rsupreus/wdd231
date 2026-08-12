@@ -807,21 +807,24 @@ blockquote cite {
 }
 
 .contact-page .page-hero {
-    padding-block: 4rem;
-    background: rgba(190, 224, 227, 0.55);
+    padding-block: 3rem;
+    background: transparent;
     border-top: 4px solid var(--deep-teal);
-    border-bottom: 1px solid rgba(34, 103, 118, 0.25);
 }
 
 .contact-page .page-hero .section-width {
-    padding: 0;
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
+    width: min(90%, var(--max-width));
+    margin-inline: auto;
+    padding: 2rem;
+    background: rgba(217, 238, 238, 0.90);
+    border: 1px solid rgba(34, 103, 118, 0.20);
+    border-left: 4px solid var(--peach);
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 24px rgba(34, 103, 118, 0.12);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
+
 .selected-services-intro {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -867,11 +870,6 @@ blockquote cite {
     padding-block: 3rem 4rem;
 }
 
-.contact-intro {
-    align-self: start;
-}
-
-.contact-page .contact-intro,
 .contact-page .wellness-plan-fieldset {
     background: rgba(217, 238, 238, 0.88);
     border: 1px solid rgba(34, 103, 118, 0.15);
@@ -885,28 +883,6 @@ blockquote cite {
     border-left: 4px solid var(--peach);
 }
 
-.contact-intro blockquote {
-    border-left: 3px solid var(--deep-teal);
-    padding-left: 1rem;
-    margin: 1.5rem 0 0;
-}
-
-.consultation-form {
-    display: grid;
-    gap: 1.5rem;
-}
-
-.consultation-form fieldset {
-    display: grid;
-    gap: 1rem;
-    margin: 0;
-    border: 1px solid rgba(34, 103, 118, 0.25);
-    border-left: 4px solid var(--peach);
-    border-radius: 0.65rem;
-    padding: 1.5rem;
-    background: rgba(248, 250, 247, 0.94);
-    box-shadow: 0 8px 20px rgba(34, 103, 118, 0.10);
-}
 
 .consultation-form legend {
     padding: 0 0.65rem;
@@ -939,13 +915,100 @@ blockquote cite {
     resize: vertical;
 }
 
-.consultation-form > .button {
-    grid-column: 2;
-    grid-row: 3;
-    width: 100%;
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
+.contact-page .wellness-plan-fieldset {
+    padding: 1.75rem 2rem;
+
+    background: rgba(217, 238, 238, 0.90);
+
+    border: 1px solid rgba(34, 103, 118, 0.18);
+    border-left: 5px solid var(--peach);
+    border-radius: 0.75rem;
+
+    box-shadow: 0 8px 24px rgba(34, 103, 118, 0.10);
 }
+
+/* ---------- CONTACT LAYOUT: MOBILE ---------- */
+
+.contact-layout {
+    width: min(90%, var(--max-width));
+    margin-inline: auto;
+    padding-block: 3rem 4rem;
+}
+
+.consultation-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.consultation-form > button[type="submit"] {
+    width: 100%;
+}
+
+
+/* ---------- CONTACT FORM CARDS ---------- */
+
+.contact-information,
+.well-interests,
+.wellness-plan-fieldset {
+    margin: 1rem;
+    padding: 1.75rem;
+    background: rgba(248, 250, 247, 0.94);
+    border: 1px solid rgba(34, 103, 118, 0.25);
+    border-left: 4px solid var(--peach);
+    border-radius: 0.65rem;
+    box-shadow: 0 8px 20px rgba(34, 103, 118, 0.10);
+}
+
+.contact-information legend,
+.well-interests legend,
+.wellness-plan-fieldset legend {
+    float: left;
+    width: 100%;
+
+    margin: 0 0 1.25rem;
+    padding: 0;
+
+    color: var(--deep-teal);
+
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.contact-information legend + *,
+.well-interests legend + *,
+.wellness-plan-fieldset legend + * {
+    clear: both;
+}
+
+.contact-information label,
+.well-interests label {
+    display: grid;
+    gap: 0.35rem;
+
+    color: var(--deep-teal);
+    font-weight: 600;
+}
+
+.contact-information input,
+.well-interests select,
+.well-interests textarea {
+    width: 100%;
+
+    border: 1px solid #aab7b5;
+    border-radius: 0.3rem;
+
+    padding: 0.75rem;
+
+    background: var(--off-white);
+    color: #333333;
+}
+
+.well-interests textarea {
+    resize: vertical;
+}
+
 
 /* ---------- CONTACT SCRIPTURE ---------- */
 
@@ -1312,6 +1375,39 @@ body.dark-mode .service-controls .eyebrow {
     color: var(--peach);
 }
 
+/* ---------- DARK MODE: SERVICES HERO ---------- */
+
+body.dark-mode.services-page .page-hero {
+    background: transparent;
+    border-top-color: var(--peach);
+    border-bottom-color: rgba(158, 205, 212, 0.2);
+}
+
+body.dark-mode.services-page .page-hero .section-width {
+    background: rgba(24, 32, 35, 0.78);
+
+    border: 1px solid rgba(158, 205, 212, 0.30);
+    border-left: 5px solid var(--peach);
+    border-radius: 0.75rem;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+body.dark-mode.services-page .page-hero h1 {
+    color: var(--soft-blue);
+}
+
+body.dark-mode.services-page .page-hero .eyebrow {
+    color: var(--peach);
+}
+
+body.dark-mode.services-page .page-hero p {
+    color: var(--off-white);
+}
+
 /* ---------- DARK MODE: SERVICE CARDS ---------- */
 
 body.services-page.dark-mode {
@@ -1423,33 +1519,36 @@ body.dark-mode.contact-page main {
 }
 
 body.dark-mode.contact-page .page-hero {
-    background: rgba(18, 42, 47, 0.78);
-    border-top-color: var(--peach);
-    border-bottom-color: rgba(158, 205, 212, 0.25);
+    background: transparent;
 }
 
 body.dark-mode.contact-page .page-hero .section-width {
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-}
+    background: rgba(24, 32, 35, 0.82);
 
-body.dark-mode.contact-page .page-hero h1 {
-    color: var(--soft-blue);
+    border-color: rgba(158, 205, 212, 0.25);
+    border-left-color: var(--peach);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
 body.dark-mode.contact-page .page-hero .eyebrow {
     color: var(--peach);
 }
 
-body.dark-mode.contact-page .page-hero p {
+body.dark-mode.contact-page .page-hero h1,
+body.dark-mode.contact-page .page-hero h2 {
+    color: var(--soft-blue);
+}
+
+body.dark-mode.contact-page .page-hero > .section-width > p {
     color: var(--off-white);
 }
 
-body.dark-mode .contact-intro,
+body.dark-mode.contact-page .page-hero blockquote {
+    color: var(--soft-blue);
+    border-left-color: var(--peach);
+}
+
 body.dark-mode .wellness-plan-fieldset  {
     background:
         linear-gradient(
@@ -1463,25 +1562,6 @@ body.dark-mode .wellness-plan-fieldset  {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
 }
 
-body.dark-mode .contact-intro h2 {
-    color: var(--soft-blue);
-}
-
-body.dark-mode .contact-intro .eyebrow {
-    color: var(--peach);
-}
-
-body.dark-mode .contact-intro > p {
-    color: var(--off-white);
-}
-
-body.dark-mode .contact-intro blockquote {
-    color: var(--soft-blue);
-}
-
-body.dark-mode .contact-intro cite {
-    color: #d6d8d3;
-}
 
 body.dark-mode .wellness-plan-fieldset legend {
     color: var(--soft-blue);
@@ -1534,6 +1614,18 @@ body.dark-mode .consultation-form textarea:focus {
     border-color: var(--peach);
     outline: 2px solid rgba(242, 176, 139, 0.45);
     background: #202a2d;
+}
+
+body.dark-mode.contact-page .consultation-form button[type="submit"] {
+    background: var(--peach);
+    color: #252525;
+    border: 1px solid var(--peach);
+}
+
+body.dark-mode.contact-page .consultation-form button[type="submit"]:hover {
+    background: var(--soft-blue);
+    color: #17383f;
+    border-color: var(--soft-blue);
 }
 
 /* ---------- THANK YOU PAGE - DARK MODE ---------- */
